@@ -4,34 +4,34 @@ extern crate clap;
 use std::process::exit;
 use std::collections::HashMap;
 
-use clap::{Arg, App};
 use toml::Value;
+use clap::{Arg, App};
 
 const NAME: &'static str = env!("CARGO_PKG_NAME");
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 
 const AMOJI_TOML: &'static str = include_str!("amoji.toml");
+// TODO read additional (override) amojis from user config
 
 fn main() {
     let value = AMOJI_TOML.parse::<Value>().expect("invalid toml in amoji.toml!");
     let amoji_map = build_amoji_map(&value);
-    // TODO avoid loading the entire map on every invocation -- cache serialized HashMap?
+    // TODO avoid loading the entire map on every invocation -- cache serialized HashMap? use
+    // persistent HashMap?
 
     let cli_matches = App::new(NAME)
                           .version(VERSION)
-                          .arg(Arg::with_name("clipboard")
-                               .short("c")
-                               .help("copy output to clipboard"))
                           .arg(Arg::with_name("text")
                                .required(true)
                                .index(1))
-                          // TODO list subcommand
                           // TODO bash completion (gen_completions)
                           .get_matches();
-    let use_clipboard = cli_matches.is_present("clipboard");
+
     let text = cli_matches.value_of("text").unwrap();
     match amoji_map.get(text) {
-        Some(amoji) => println!("{}", amoji),
+        Some(amoji) => {
+            println!("{}", amoji);
+        }
         None => {
             println!("no match for {}", text);
             exit(1);
