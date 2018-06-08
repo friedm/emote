@@ -1,817 +1,817 @@
 [amoji]
-  [amojis.acid]
+  [amoji.acid]
     words = ['acid']
     amoji = '⊂(◉‿◉)つ'
-  [amojis.afraid]
+  [amoji.afraid]
     words = ['afraid']
     amoji = '(ㆆ _ ㆆ)'
-  [amojis.angel]
+  [amoji.angel]
     words = ['angel']
     amoji = '☜(⌒▽⌒)☞'
-  [amojis.angry]
+  [amoji.angry]
     words = ['angry']
     amoji = '•`_´•'
-  [amojis.arrowhead]
+  [amoji.arrowhead]
     words = ['arrowhead']
     amoji = '⤜(ⱺ ʖ̯ⱺ)⤏'
-  [amojis.apple]
+  [amoji.apple]
     words = ['apple']
     amoji = ''
-  [amojis.ass]
+  [amoji.ass]
     words = ['ass', 'butt']
     amoji = '(‿|‿)'
-  [amojis.awkward]
+  [amoji.awkward]
     words = ['awkward']
     amoji = '•͡˘㇁•͡˘'
-  [amojis.bat]
+  [amoji.bat]
     words = ['bat']
     amoji = '/|\\ ^._.^ /|\\'
-  [amojis.bear]
+  [amoji.bear]
     words = ['bear', 'koala']
     amoji = 'ʕ·͡ᴥ·ʔ﻿'
-  [amojis.bearflip]
+  [amoji.bearflip]
     words = ['bearflip']
     amoji = 'ʕノ•ᴥ•ʔノ ︵ ┻━┻'
-  [amojis.bearhug]
+  [amoji.bearhug]
     words = ['bearhug']
     amoji = 'ʕっ•ᴥ•ʔっ'
-  [amojis.because]
+  [amoji.because]
     words = ['because', 'since']
     amoji = '∵'
-  [amojis.bigheart]
+  [amoji.bigheart]
     words = ['bigheart']
     amoji = '❤'
-  [amojis.blackeye]
+  [amoji.blackeye]
     words = ['blackeye']
     amoji = '0__#'
-  [amojis.blubby]
+  [amoji.blubby]
     words = ['blubby']
     amoji = '(      0    _   0    )'
-  [amojis.blush]
+  [amoji.blush]
     words = ['blush']
     amoji = '(˵ ͡° ͜ʖ ͡°˵)'
-  [amojis.bond]
+  [amoji.bond]
     words = ['bond', '007']
     amoji = '┌( ͝° ͜ʖ͡°)=ε/̵͇̿̿/’̿’̿ ̿'
-  [amojis.boobs]
+  [amoji.boobs]
     words = ['boobs']
     amoji = '( . Y . )'
-  [amojis.bored]
+  [amoji.bored]
     words = ['bored']
     amoji = '(-_-)'
-  [amojis.bribe]
+  [amoji.bribe]
     words = ['bribe']
     amoji = '( •͡˘ _•͡˘)ノð'
-  [amojis.bubbles]
+  [amoji.bubbles]
     words = ['bubbles']
     amoji = '( ˘ ³˘)ノ°ﾟº❍｡'
-  [amojis.butterfly]
+  [amoji.butterfly]
     words = ['butterfly']
     amoji = 'ƸӜƷ'
-  [amojis.cat]
+  [amoji.cat]
     words = ['cat']
     amoji = '(= ФェФ=)'
-  [amojis.catlenny]
+  [amoji.catlenny]
     words = ['catlenny']
     amoji = '( ͡° ᴥ ͡°)﻿'
-  [amojis.checkmark]
+  [amoji.checkmark]
     words = ['check']
     amoji = '✓'
-  [amojis.chubby]
+  [amoji.chubby]
     words = ['chubby']
     amoji = '╭(ʘ̆~◞౪◟~ʘ̆)╮'
-  [amojis.claro]
+  [amoji.claro]
     words = ['claro']
     amoji = '(͡ ° ͜ʖ ͡ °)'
-  [amojis.clique]
+  [amoji.clique]
     words = ['clique', 'gang', 'squad']
     amoji = 'ヽ༼ ຈل͜ຈ༼ ▀̿̿Ĺ̯̿̿▀̿ ̿༽Ɵ͆ل͜Ɵ͆ ༽ﾉ'
-  [amojis.cloud]
+  [amoji.cloud]
     words = ['cloud']
     amoji = '☁'
-  [amojis.club]
+  [amoji.club]
     words = ['club']
     amoji = '♣'
-  [amojis.coffee]
+  [amoji.coffee]
     words = ['coffee', 'cuppa']
     amoji = 'c[_]'
-  [amojis.command]
+  [amoji.command]
     words = ['cmd', 'command']
     amoji = '⌘'
-  [amojis.cool]
+  [amoji.cool]
     words = ['cool', 'csi']
     amoji = '(•_•) ( •_•)>⌐■-■ (⌐■_■)'
-  [amojis.copyright]
+  [amoji.copyright]
     words = ['copy','c']
     amoji = '©'
-  [amojis.creep]
+  [amoji.creep]
     words = ['creep']
     amoji = 'ԅ(≖‿≖ԅ)'
-  [amojis.creepcute]
+  [amoji.creepcute]
     words = ['creepcute']
     amoji = 'ƪ(ړײ)‎ƪ​​'
-  [amojis.crim3s]
+  [amoji.crim3s]
     words = ['crim3s']
     amoji = '( ✜︵✜ )'
-  [amojis.cross]
+  [amoji.cross]
     words = ['cross']
     amoji = '†'
-  [amojis.cry]
+  [amoji.cry]
     words = ['cry']
     amoji = '(╥﹏╥)'
-  [amojis.crywave]
+  [amoji.crywave]
     words = ['crywave']
     amoji = '( ╥﹏╥) ノシ'
-  [amojis.cute]
+  [amoji.cute]
     words = ['cute']
     amoji = '(｡◕‿‿◕｡)'
-  [amojis.d1]
+  [amoji.d1]
     words = ['d1']
     amoji = '⚀'
-  [amojis.d2]
+  [amoji.d2]
     words = ['d2']
     amoji = '⚁'
-  [amojis.d3]
+  [amoji.d3]
     words = ['d3']
     amoji = '⚂'
-  [amojis.d4]
+  [amoji.d4]
     words = ['d4']
     amoji = '⚃'
-  [amojis.d5]
+  [amoji.d5]
     words = ['d5']
     amoji = '⚄'
-  [amojis.d6]
+  [amoji.d6]
     words = ['d6']
     amoji = '⚅'
-  [amojis.damnyou]
+  [amoji.damnyou]
     words = ['damnyou']
     amoji = '(ᕗ ͠° ਊ ͠° )ᕗ'
-  [amojis.dance]
+  [amoji.dance]
     words = ['dance']
     amoji = 'ᕕ(⌐■_■)ᕗ ♪♬'
-  [amojis.dead]
+  [amoji.dead]
     words = ['dead']
     amoji = 'x⸑x'
-  [amojis.dealwithit]
+  [amoji.dealwithit]
     words = ['dealwithit', 'dwi']
     amoji = '(⌐■_■)'
-  [amojis.delta]
+  [amoji.delta]
     words = ['delta']
     amoji = 'Δ'
-  [amojis.depressed]
+  [amoji.depressed]
     words = ['depressed']
     amoji = '(︶︹︶)'
-  [amojis.derp]
+  [amoji.derp]
     words = ['derp']
     amoji = '☉ ‿ ⚆'
-  [amojis.diamond]
+  [amoji.diamond]
     words = ['diamond']
     amoji = '♦'
-  [amojis.dog]
+  [amoji.dog]
     words = ['dog']
     amoji = '(◕ᴥ◕ʋ)'
-  [amojis.dollar]
+  [amoji.dollar]
     words = ['dollar']
     amoji = '$'
-  [amojis.dong]
+  [amoji.dong]
     words = ['dong']
     amoji = '(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄'
-  [amojis.donger]
+  [amoji.donger]
     words = ['donger']
     amoji = 'ヽ༼ຈل͜ຈ༽ﾉ'
-  [amojis.dontcare]
+  [amoji.dontcare]
     words = ['dontcare']
     amoji = '╭∩╮（︶︿︶）╭∩╮'
-  [amojis.donotwant]
+  [amoji.donotwant]
     words = ['do not want', 'dontwant']
     amoji = 'ヽ(｀Д´)ﾉ'
-  [amojis.dope]
+  [amoji.dope]
     words = ['dope']
     amoji = '<(^_^)>'
-  [amojis.doublequotesleft]
+  [amoji.doublequotesleft]
     words = ['<<']
     amoji = '«'
-  [amojis.doublequotesright]
+  [amoji.doublequotesright]
     words = ['>>']
     amoji = '»'
-  [amojis.doubleflat]
+  [amoji.doubleflat]
     words = ['doubleflat']
     amoji = '𝄫'
-  [amojis.doublesharp]
+  [amoji.doublesharp]
     words = ['doublesharp']
     amoji = '𝄪'
-  [amojis.doubletableflip]
+  [amoji.doubletableflip]
     words = ['doubletableflip']
     amoji = '┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻'
-  [amojis.down]
+  [amoji.down]
     words = ['down']
     amoji = '↓'
-  [amojis.duckface]
+  [amoji.duckface]
     words = ['duckface']
     amoji = '(・3・)'
-  [amojis.duel]
+  [amoji.duel]
     words = ['duel']
     amoji = 'ᕕ(╭ರ╭ ͟ʖ╮•́)⊃¤=(————-'
-  [amojis.duh]
+  [amoji.duh]
     words = ['duh']
     amoji = '(≧︿≦)'
-  [amojis.dunnolol]
+  [amoji.dunnolol]
     words = ['dunno']
     amoji = '¯\\(°_o)/¯'
-  [amojis.ebola]
+  [amoji.ebola]
     words = ['ebola']
     amoji = 'ᴇʙᴏʟᴀ'
-  [amojis.ellipsis]
+  [amoji.ellipsis]
     words = ['ellipsis', '...']
     amoji = '…'
-  [amojis.emdash]
+  [amoji.emdash]
     words = ['emdash', '--']
     amoji = '–'
-  [amojis.emptystar]
+  [amoji.emptystar]
     words = ['emptystar']
     amoji = '☆'
-  [amojis.emptytriangle]
+  [amoji.emptytriangle]
     words = ['emptytriangle', 't2']
     amoji = '△'
-  [amojis.endure]
+  [amoji.endure]
     words = ['endure']
     amoji = '(҂◡_◡) ᕤ'
-  [amojis.envelope]
+  [amoji.envelope]
     words = ['envelope', 'letter']
     amoji = '✉︎'
-  [amojis.epsilon]
+  [amoji.epsilon]
     words = ['epsilon']
     amoji = 'ɛ'
-  [amojis.euro]
+  [amoji.euro]
     words = ['euro']
     amoji = '€'
-  [amojis.evil]
+  [amoji.evil]
     words = ['evil']
     amoji = 'ψ(｀∇´)ψ'
-  [amojis.evillenny]
+  [amoji.evillenny]
     words = ['evillenny']
     amoji = '(͠≖ ͜ʖ͠≖)'
-  [amojis.execution]
+  [amoji.execution]
     words = ['execution']
     amoji = '(⌐■_■)︻╦╤─   (╥﹏╥)'
-  [amojis.facebook]
+  [amoji.facebook]
     words = ['facebook']
     amoji = '(╯°□°)╯︵ ʞooqǝɔɐɟ'
-  [amojis.facepalm]
+  [amoji.facepalm]
     words = ['facepalm']
     amoji = '(－‸ლ)'
-  [amojis.fart]
+  [amoji.fart]
     words = ['fart']
     amoji = '(ˆ⺫ˆ๑)<3'
-  [amojis.fight]
+  [amoji.fight]
     words = ['fight']
     amoji = '(ง •̀_•́)ง'
-  [amojis.finn]
+  [amoji.finn]
     words = ['finn']
     amoji = '| (• ◡•)|'
-  [amojis.fish]
+  [amoji.fish]
     words = ['fish']
     amoji = '<"(((<3'
-  [amojis.five]
+  [amoji.five]
     words = ['5', 'five']
     amoji = '卌'
-  [amojis.fiveeights]
+  [amoji.fiveeights]
     words = ['5/8']
     amoji = '⅝'
-  [amojis.flat]
+  [amoji.flat]
     words = ['flat', 'bemolle']
     amoji = '♭'
-  [amojis.flexing]
+  [amoji.flexing]
     words = ['flexing']
     amoji = 'ᕙ(`▽´)ᕗ'
-  [amojis.flipped]
+  [amoji.flipped]
     words = ['flipped', 'heavytable']
     amoji = '┬─┬﻿ ︵ /(.□. \\）'
-  [amojis.flower]
+  [amoji.flower]
     words = ['flower', 'flor']
     amoji = '(✿◠‿◠)'
-  [amojis.flower2]
+  [amoji.flower2]
     words = ['f']
     amoji = '✿'
-  [amojis.fly]
+  [amoji.fly]
     words = ['fly']
     amoji = '─=≡Σ((( つ◕ل͜◕)つ'
-  [amojis.friendflip]
+  [amoji.friendflip]
     words = ['friendflip']
     amoji = '(╯°□°)╯︵ ┻━┻ ︵ ╯(°□° ╯)'
-  [amojis.frown]
+  [amoji.frown]
     words = ['frown']
     amoji = '(ღ˘⌣˘ღ)'
-  [amojis.fuckoff]
+  [amoji.fuckoff]
     words = ['fuckoff', 'gtfo']
     amoji = '୧༼ಠ益ಠ╭∩╮༽'
-  [amojis.fuckyou]
+  [amoji.fuckyou]
     words = ['fuckyou', 'fu']
     amoji = '┌П┐(ಠ_ಠ)'
-  [amojis.gentleman]
+  [amoji.gentleman]
     words = ['gentleman', 'sir', 'monocle']
     amoji = 'ಠ_ರೃ'
-  [amojis.ghast]
+  [amoji.ghast]
     words = ['ghast']
     amoji = '= _ ='
-  [amojis.ghost]
+  [amoji.ghost]
     words = ['ghost']
     amoji = '༼ つ ❍_❍ ༽つ'
-  [amojis.gift]
+  [amoji.gift]
     words = ['gift', 'present']
     amoji = '(´・ω・)っ由'
-  [amojis.gimme]
+  [amoji.gimme]
     words = ['gimme']
     amoji = '༼ つ ◕_◕ ༽つ'
-  [amojis.glitterbomb]
+  [amoji.glitterbomb]
     words = ['glitter']
     amoji = '(*・‿・)ノ⌒*:･ﾟ✧'
-  [amojis.glasses]
+  [amoji.glasses]
     words = ['glasses']
     amoji = '(⌐ ͡■ ͜ʖ ͡■)'
-  [amojis.glassesoff]
+  [amoji.glassesoff]
     words = ['glassesoff']
     amoji = '( ͡° ͜ʖ ͡°)ﾉ⌐■-■'
-  [amojis.glitterderp]
+  [amoji.glitterderp]
     words = ['glitterderp']
     amoji = '(ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧'
-  [amojis.gloomy]
+  [amoji.gloomy]
     words = ['gloomy']
     amoji = '(_゜_゜_)'
-  [amojis.goatse]
+  [amoji.goatse]
     words = ['goatse']
     amoji = '(з๏ε)'
-  [amojis.gotit]
+  [amoji.gotit]
     words = ['gotit']
     amoji = '(☞ﾟ∀ﾟ)☞'
-  [amojis.greet]
+  [amoji.greet]
     words = ['greet', 'greetings']
     amoji = '( ´◔ ω◔`) ノシ'
-  [amojis.gun]
+  [amoji.gun]
     words = ['gun', 'mg']
     amoji = '︻╦╤─'
-  [amojis.hadouken]
+  [amoji.hadouken]
     words = ['hadouken']
     amoji = '༼つಠ益ಠ༽つ ─=≡ΣO))'
-  [amojis.hammerandsickle]
+  [amoji.hammerandsickle]
     words = ['hammerandsickle', 'hs']
     amoji = '☭'
-  [amojis.handleft]
+  [amoji.handleft]
     words = ['handleft', 'hl']
     amoji = '☜'
-  [amojis.handright]
+  [amoji.handright]
     words = ['handright', 'hr']
     amoji = '☞'
-  [amojis.haha]
+  [amoji.haha]
     words = ['haha']
     amoji = '٩(^‿^)۶'
-  [amojis.happy]
+  [amoji.happy]
     words = ['happy']
     amoji = '٩( ๑╹ ꇴ╹)۶'
-  [amojis.happygarry]
+  [amoji.happygarry]
     words = ['happygarry']
     amoji = 'ᕕ( ᐛ )ᕗ'
-  [amojis.heart]
+  [amoji.heart]
     words = ['h', 'heart']
     amoji = '♥'
-  [amojis.hello]
+  [amoji.hello]
     words = ['hello', 'ohai', 'bye']
     amoji = '(ʘ‿ʘ)╯'
-  [amojis.highfive]
+  [amoji.highfive]
     words = ['highfive']
     amoji = '._.)/\\(._.'
-  [amojis.hitting]
+  [amoji.hitting]
     words = ['hitting']
     amoji = '( ｀皿´)｡ﾐ/'
-  [amojis.hugs]
+  [amoji.hugs]
     words = ['hug', 'hugs']
     amoji = '(づ｡◕‿‿◕｡)づ'
-  [amojis.iknowright]
+  [amoji.iknowright]
     words = ['iknowright', 'ikr']
     amoji = '┐｜･ิω･ิ#｜┌'
-  [amojis.illuminati]
+  [amoji.illuminati]
     words = ['illuminati']
     amoji = '୧(▲ᴗ▲)ノ'
-  [amojis.infinity]
+  [amoji.infinity]
     words = ['infinity', 'inf']
     amoji = '∞'
-  [amojis.inlove]
+  [amoji.inlove]
     words = ['inlove']
     amoji = '(っ´ω`c)♡'
-  [amojis.integral]
+  [amoji.integral]
     words = ['int']
     amoji = '∫'
-  [amojis.internet]
+  [amoji.internet]
     words = ['internet']
     amoji = 'ଘ(੭*ˊᵕˋ)੭* ̀ˋ ɪɴᴛᴇʀɴᴇᴛ'
-  [amojis.interrobang]
+  [amoji.interrobang]
     words = ['interrobang']
     amoji = '‽'
-  [amojis.jake]
+  [amoji.jake]
     words = ['jake']
     amoji = '(❍ᴥ❍ʋ)'
-  [amojis.kawaii]
+  [amoji.kawaii]
     words = ['kawaii']
     amoji = '≧◡≦'
-  [amojis.keen]
+  [amoji.keen]
     words = ['keen']
     amoji = '┬┴┬┴┤Ɵ͆ل͜Ɵ͆ ༽ﾉ'
-  [amojis.kiahh]
+  [amoji.kiahh]
     words = ['kiahh']
     amoji = '~\\(≧▽≦)/~'
-  [amojis.kiss]
+  [amoji.kiss]
     words = ['kiss']
     amoji = '(づ ￣ ³￣)づ'
-  [amojis.kyubey]
+  [amoji.kyubey]
     words = ['kyubey']
     amoji = '／人◕ ‿‿ ◕人＼'
-  [amojis.lambda]
+  [amoji.lambda]
     words = ['lambda']
     amoji = 'λ'
-  [amojis.lazy]
+  [amoji.lazy]
     words = ['lazy']
     amoji = '_(:3」∠)_'
-  [amojis.left]
+  [amoji.left]
     words = ['left', '<-']
     amoji = '←'
-  [amojis.lenny]
+  [amoji.lenny]
     words = ['lenny']
     amoji = '( ͡° ͜ʖ ͡°)'
-  [amojis.lennybill]
+  [amoji.lennybill]
     words = ['lennybill']
     amoji = '[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]'
-  [amojis.lennyfight]
+  [amoji.lennyfight]
     words = ['lennyfight']
     amoji = '(ง ͠° ͟ʖ ͡°)ง'
-  [amojis.lennyflip]
+  [amoji.lennyflip]
     words = ['lennyflip']
     amoji = '(ノ ͡° ͜ʖ ͡°ノ)   ︵ ( ͜。 ͡ʖ ͜。)'
-  [amojis.lennygang]
+  [amoji.lennygang]
     words = ['lennygang']
     amoji = '( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)'
-  [amojis.lennyshrug]
+  [amoji.lennyshrug]
     words = ['lennyshrug']
     amoji = '¯\\_( ͡° ͜ʖ ͡°)_/¯'
-  [amojis.lennysir]
+  [amoji.lennysir]
     words = ['lennysir']
     amoji = '( ಠ ͜ʖ ರೃ)'
-  [amojis.lennystalker]
+  [amoji.lennystalker]
     words = ['lennystalker']
     amoji = '┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴'
-  [amojis.lennystrong]
+  [amoji.lennystrong]
     words = ['lennystrong']
     amoji = 'ᕦ( ͡° ͜ʖ ͡°)ᕤ'
-  [amojis.lennywizard]
+  [amoji.lennywizard]
     words = ['lennywizard']
     amoji = '╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ'
-  [amojis.lol]
+  [amoji.lol]
     words = ['lol']
     amoji = 'L(° O °L)'
-  [amojis.look]
+  [amoji.look]
     words = ['look']
     amoji = '(ಡ_ಡ)☞'
-  [amojis.love]
+  [amoji.love]
     words = ['love']
     amoji = '♥‿♥'
-  [amojis.lovebear]
+  [amoji.lovebear]
     words = ['lovebear']
     amoji = 'ʕ♥ᴥ♥ʔ'
-  [amojis.lumpy]
+  [amoji.lumpy]
     words = ['lumpy']
     amoji = '꒰ ꒡⌓꒡꒱'
-  [amojis.luv]
+  [amoji.luv]
     words = ['luv']
     amoji = '-`ღ´-'
-  [amojis.magic]
+  [amoji.magic]
     words = ['magic']
     amoji = 'ヽ(｀Д´)⊃━☆ﾟ. * ･ ｡ﾟ,'
-  [amojis.magicflip]
+  [amoji.magicflip]
     words = ['magicflip']
     amoji = '(/¯◡ ‿ ◡)/¯ ~ ┻━┻'
-  [amojis.meep]
+  [amoji.meep]
     words = ['meep']
     amoji = '\\(°^°)/'
-  [amojis.meh]
+  [amoji.meh]
     words = ['meh']
     amoji = 'ಠ_ಠ'
-  [amojis.mistyeyes]
+  [amoji.mistyeyes]
     words = ['mistyeyes']
     amoji = 'ಡ_ಡ'
-  [amojis.monster]
+  [amoji.monster]
     words = ['monster']
     amoji = '༼ ༎ຶ ෴ ༎ຶ༽'
-  [amojis.natural]
+  [amoji.natural]
     words = ['natural']
     amoji = '♮'
-  [amojis.needle]
+  [amoji.needle]
     words = ['needle', 'inject']
     amoji = '┌(◉ ͜ʖ◉)つ┣▇▇▇═──'
-  [amojis.nice]
+  [amoji.nice]
     words = ['nice']
     amoji = '( ͡° ͜ °)'
-  [amojis.no]
+  [amoji.no]
     words = ['no']
     amoji = '→_←'
-  [amojis.noclue]
+  [amoji.noclue]
     words = ['noclue']
     amoji = '／人◕ __ ◕人＼'
-  [amojis.nom]
+  [amoji.nom]
     words = ['nom', 'yummy', 'delicious']
     amoji = '(っˆڡˆς)'
-  [amojis.note]
+  [amoji.note]
     words = ['note', 'sing']
     amoji = '♫'
-  [amojis.nuclear]
+  [amoji.nuclear]
     words = ['nuclear', 'radioactive', 'nukular']
     amoji = '☢'
-  [amojis.nyan]
+  [amoji.nyan]
     words = ['nyan']
     amoji = '~=[,,_,,]:3'
-  [amojis.nyeh]
+  [amoji.nyeh]
     words = ['nyeh']
     amoji = '@^@'
-  [amojis.ohshit]
+  [amoji.ohshit]
     words = ['ohshit']
     amoji = '( º﹃º )'
-  [amojis.omg]
+  [amoji.omg]
     words = ['omg']
     amoji = '◕_◕'
-  [amojis.oneeighth]
+  [amoji.oneeighth]
     words = ['1/8']
     amoji = '⅛'
-  [amojis.onefourth]
+  [amoji.onefourth]
     words = ['1/4']
     amoji = '¼'
-  [amojis.onehalf]
+  [amoji.onehalf]
     words = ['1/2']
     amoji = '½'
-  [amojis.onethird]
+  [amoji.onethird]
     words = ['1/3']
     amoji = '⅓'
-  [amojis.option]
+  [amoji.option]
     words = ['opt', 'option']
     amoji = '⌥'
-  [amojis.ohreally]
+  [amoji.ohreally]
     words = ['orly']
     amoji = '(눈_눈)'
-  [amojis.ohyou]
+  [amoji.ohyou]
     words = ['ohyou', 'ou']
     amoji = '(◞థ౪థ)ᴖ'
-  [amojis.peace]
+  [amoji.peace]
     words = ['peace', 'victory']
     amoji = '✌(-‿-)✌'
-  [amojis.pear]
+  [amoji.pear]
     words = ['pear']
     amoji = '(__>-'
-  [amojis.pi]
+  [amoji.pi]
     words = ['pi']
     amoji = 'π'
-  [amojis.pingpong]
+  [amoji.pingpong]
     words = ['pingpong']
     amoji = '( •_•)O*¯`·.¸.·´¯`°Q(•_• )'
-  [amojis.plain]
+  [amoji.plain]
     words = ['plain']
     amoji = '._.'
-  [amojis.pleased]
+  [amoji.pleased]
     words = ['pleased']
     amoji = '(˶‾᷄ ⁻̫ ‾᷅˵)'
-  [amojis.point]
+  [amoji.point]
     words = ['point']
     amoji = '(☞ﾟヮﾟ)☞'
-  [amojis.pooh]
+  [amoji.pooh]
     words = ['pooh']
     amoji = 'ʕ •́؈•̀)'
-  [amojis.pound]
+  [amoji.pound]
     words = ['pound']
     amoji = '£'
-  [amojis.praise]
+  [amoji.praise]
     words = ['praise']
     amoji = '(☝ ՞ਊ ՞)☝'
-  #[amojis.punch]
+  #[amoji.punch]
   #  words = ['punch']
   #  amoji = 'O=(\'-\'Q)'
-  [amojis.rage]
+  [amoji.rage]
     words = ['rage', 'mad']
     amoji = 't(ಠ益ಠt)'
-  [amojis.rageflip]
+  [amoji.rageflip]
     words = ['rageflip']
     amoji = '(ノಠ益ಠ)ノ彡┻━┻'
-  [amojis.rainbowcat]
+  [amoji.rainbowcat]
     words = ['rainbowcat']
     amoji = '(=^･ｪ･^=))ﾉ彡☆'
-  [amojis.really]
+  [amoji.really]
     words = ['really']
     amoji = 'ò_ô'
-  [amojis.registered]
+  [amoji.registered]
     words = ['r']
     amoji = '®'
-  [amojis.right]
+  [amoji.right]
     words = ['right', '->']
     amoji = '→'
-  [amojis.riot]
+  [amoji.riot]
     words = ['riot']
     amoji = '୧༼ಠ益ಠ༽୨'
-  [amojis.rolleyes]
+  [amoji.rolleyes]
     words = ['rolleyes']
     amoji = '(◔_◔)'
-  [amojis.rose ]
+  [amoji.rose ]
     words = ['rose']
     amoji = '✿ڿڰۣ—'
-  [amojis.run]
+  [amoji.run]
     words = ['run']
     amoji = '(╯°□°)╯'
-  [amojis.sad]
+  [amoji.sad]
     words = ['sad']
     amoji = 'ε(´סּ︵סּ`)з'
-  [amojis.saddonger]
+  [amoji.saddonger]
     words = ['saddonger']
     amoji = 'ヽ༼ຈʖ̯ຈ༽ﾉ'
-  [amojis.sadlenny]
+  [amoji.sadlenny]
     words = ['sadlenny']
     amoji = '( ͡° ʖ̯ ͡°)'
-  [amojis.seveneigths]
+  [amoji.seveneigths]
     words = ['7/8']
     amoji = '⅞'
-  [amojis.sharp]
+  [amoji.sharp]
     words = ['sharp', 'diesis']
     amoji = '♯'
-  [amojis.shout]
+  [amoji.shout]
     words = ['shout']
     amoji = '╚(•⌂•)╝'
-  [amojis.shrug]
+  [amoji.shrug]
     words = ['shrug']
     amoji = '¯\\_(ツ)_/¯'
-  [amojis.shy]
+  [amoji.shy]
     words = ['shy']
     amoji = '=^_^='
-  [amojis.sigma]
+  [amoji.sigma]
     words = ['sigma', 'sum']
     amoji = 'Σ'
-  [amojis.skull]
+  [amoji.skull]
     words = ['skull']
     amoji = '☠'
-  [amojis.smile]
+  [amoji.smile]
     words = ['smile']
     amoji = 'ツ'
-  [amojis.smiley]
+  [amoji.smiley]
     words = ['smiley']
     amoji = '☺︎'
-  [amojis.smirk]
+  [amoji.smirk]
     words = ['smirk']
     amoji = '¬‿¬'
-  [amojis.snowman]
+  [amoji.snowman]
     words = ['snowman']
     amoji = '☃'
-  [amojis.sob]
+  [amoji.sob]
     words = ['sob']
     amoji = '(;´༎ຶД༎ຶ`)'
-  [amojis.spade]
+  [amoji.spade]
     words = ['spade']
     amoji = '♠'
-  [amojis.squareroot]
+  [amoji.squareroot]
     words = ['sqrt']
     amoji = '√'
-  [amojis.squid]
+  [amoji.squid]
     words = ['squid']
     amoji = '<コ:彡'
-  [amojis.star]
+  [amoji.star]
     words = ['star']
     amoji = '★'
-  [amojis.strong]
+  [amoji.strong]
     words = ['strong']
     amoji = 'ᕙ(⇀‸↼‶)ᕗ'
-  [amojis.suicide]
+  [amoji.suicide]
     words = ['suicide']
     amoji = 'ε/̵͇̿̿/’̿’̿ ̿(◡︵◡)'
-  [amojis.sum]
+  [amoji.sum]
     words = ['sum']
     amoji = '∑'
-  [amojis.sun]
+  [amoji.sun]
     words = ['sun']
     amoji = '☀'
-  [amojis.surprised]
+  [amoji.surprised]
     words = ['surprised']
     amoji = '(๑•́ ヮ •̀๑)'
-  [amojis.surrender]
+  [amoji.surrender]
     words = ['surrender']
     amoji = '\\_(-_-)_/'
-  [amojis.stalker]
+  [amoji.stalker]
     words = ['stalker']
     amoji = '┬┴┬┴┤(･_├┬┴┬┴'
-  [amojis.swag]
+  [amoji.swag]
     words = ['swag']
     amoji = '(̿▀̿‿ ̿▀̿ ̿)'
-  [amojis.sword]
+  [amoji.sword]
     words = ['sword']
     amoji = 'o()xxxx[{::::::::::::::::::>'
-  [amojis.tabledown]
+  [amoji.tabledown]
     words = ['tabledown']
     amoji = '┬─┬﻿ ノ( ゜-゜ノ)'
-  [amojis.tableflip]
+  [amoji.tableflip]
     words = ['tableflip']
     amoji = '(ノ ゜Д゜)ノ ︵ ┻━┻'
-  [amojis.tau]
+  [amoji.tau]
     words = ['tau']
     amoji = 'τ'
-  [amojis.tears]
+  [amoji.tears]
     words = ['tears']
     amoji = '(ಥ﹏ಥ)'
-  [amojis.terrorist]
+  [amoji.terrorist]
     words = ['terrorist']
     amoji = '୧༼ಠ益ಠ༽︻╦╤─'
-  [amojis.thanks]
+  [amoji.thanks]
     words = ['thanks', 'thankyou', 'ty']
     amoji = '\\(^-^)/'
-  [amojis.therefore]
+  [amoji.therefore]
     words = ['therefore', 'so']
     amoji = '⸫'
-  [amojis.threeeights]
+  [amoji.threeeights]
     words = ['3/8']
     amoji = '⅜'
-  [amojis.tiefighter]
+  [amoji.tiefighter]
     words = ['tiefighter']
     amoji = '|=-(¤)-=|'
-  [amojis.tired]
+  [amoji.tired]
     words = ['tired']
     amoji = '(=____=)'
-  [amojis.toldyouso]
+  [amoji.toldyouso]
     words = ['toldyouso', 'toldyou']
     amoji = '☜(꒡⌓꒡)'
-  [amojis.toogood]
+  [amoji.toogood]
     words = ['toogood']
     amoji = 'ᕦ(òᴥó)ᕥ'
-  [amojis.trademark]
+  [amoji.trademark]
     words = ['tm']
     amoji = '™'
-  [amojis.triangle]
+  [amoji.triangle]
     words = ['triangle', 't']
     amoji = '▲'
-  [amojis.twothirds]
+  [amoji.twothirds]
     words = ['2/3']
     amoji = '⅔'
-  [amojis.unflip]
+  [amoji.unflip]
     words = ['unflip']
     amoji = '┬──┬ ノ(ò_óノ)'
-  [amojis.up]
+  [amoji.up]
     words = ['up']
     amoji = '↑'
-  [amojis.victory]
+  [amoji.victory]
     words = ['victory']
     amoji = '(๑•̀ㅂ•́)ง✧'
-  [amojis.wat]
+  [amoji.wat]
     words = ['wat']
     amoji = '(ÒДÓױ)'
-  [amojis.wave]
+  [amoji.wave]
     words = ['wave']
     amoji = '( * ^ *) ノシ'
-  [amojis.whaa]
+  [amoji.whaa]
     words = ['whaa']
     amoji = 'Ö'
-  [amojis.whistle]
+  [amoji.whistle]
     words = ['whistle']
     amoji = '(っ^з^)♪♬'
-  [amojis.whoa]
+  [amoji.whoa]
     words = ['whoa']
     amoji = '(°o•)'
-  [amojis.why]
+  [amoji.why]
     words = ['why']
     amoji = 'ლ(`◉◞౪◟◉‵ლ)'
-  [amojis.woo]
+  [amoji.woo]
     words = ['woo']
     amoji = '＼(＾O＾)／'
-  [amojis.wtf]
+  [amoji.wtf]
     words = ['wtf']
     amoji = '''(⊙＿⊙\')'''
-  [amojis.wut]
+  [amoji.wut]
     words = ['wut']
     amoji = '⊙ω⊙'
-  [amojis.yay]
+  [amoji.yay]
     words = ['yay']
     amoji = '\\( ﾟヮﾟ)/'
-  [amojis.yeah]
+  [amoji.yeah]
     words = ['yeah', 'yes']
     amoji = '(•̀ᴗ•́)و ̑̑'
-  [amojis.yen]
+  [amoji.yen]
     words = ['yen']
     amoji = '¥'
-  [amojis.yinyang]
+  [amoji.yinyang]
     words = ['yinyang', 'yy']
     amoji = '☯'
-  [amojis.yolo]
+  [amoji.yolo]
     words = ['yolo']
     amoji = 'Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ'
-  [amojis.youkids]
+  [amoji.youkids]
     words = ['youkids', 'ukids']
     amoji = 'ლ༼>╭ ͟ʖ╮<༽ლ'
-  [amojis.yuno]
+  [amoji.yuno]
     words = ['y u no', 'yuno']
     amoji = '(屮ﾟДﾟ)屮 Y U NO'
-  [amojis.zen]
+  [amoji.zen]
     words = ['zen', 'meditation', 'omm']
     amoji = '⊹╰(⌣ʟ⌣)╯⊹'
-  [amojis.zoidberg]
+  [amoji.zoidberg]
     words = ['zoidberg']
     amoji = '(V) (°,,,,°) (V)'
-  [amojis.zombie]
+  [amoji.zombie]
     words = ['zombie']
     amoji = '[¬º-°]¬'
