@@ -1,0 +1,8 @@
+[package]
+name = "amoji"
+version = "0.1.0"
+authors = ["Matt Friedman <matt@friedm.com>"]
+
+[dependencies]
+toml = "0.4"
+clap = "2.31"
