@@ -3,6 +3,7 @@ extern crate blake2;
 extern crate clap;
 extern crate time;
 extern crate toml;
+extern crate serde_json;
 
 use std::process::exit;
 use std::collections::HashMap;
@@ -42,7 +43,7 @@ fn main() {
     let t1 = precise_time_ns();
     setup_config().expect("failed to write default config file!");
     let t2 = precise_time_ns();
-    let amoji_map = load_and_cache_amojis().expect("failed to load amoji map!"); // 19ms
+    let amoji_map = load_and_cache_amojis().expect("failed to load amoji map!");
     let t3 = precise_time_ns();
     match amoji_map.get(text) {
         Some(amoji) => {
@@ -80,16 +81,30 @@ fn get_config_path() -> PathBuf {
 }
 
 fn write_config(s: &'static str) -> std::io::Result<()> {
-    let config_path = get_config_path();
-    let mut f = File::create(config_path)?;
+    write(get_config_path(), s)
+}
+
+fn write_cached_map<'a>(s: &'a str) -> std::io::Result<()> {
+    write(get_cache_path("amoji.map"), s)
+}
+
+fn write<'a>(path: PathBuf, s: &'a str) -> std::io::Result<()> { // TODO clean up
+    let mut f = File::create(path)?;
     f.write_all(s.as_bytes())?;
     f.sync_all()?;
     Ok(())
 }
 
 fn read_config() -> std::io::Result<String> {
-    let config_path = get_config_path();
-    let mut f = File::open(config_path)?;
+    read(get_config_path())
+}
+
+fn read_cached_map() -> std::io::Result<String> {
+    read(get_cache_path("amoji.map"))
+}
+
+fn read(path: PathBuf) -> std::io::Result<String> {
+    let mut f = File::open(path)?;
     let mut config = String::new();
     f.read_to_string(&mut config)?;
     Ok(config)
@@ -97,7 +112,7 @@ fn read_config() -> std::io::Result<String> {
 
 fn get_cache_path(s: &'static str) -> PathBuf {
     let cache_path = app_dir(AppDataType::UserCache, &APP_INFO, "cache").expect("failed to get cache path!");
-    cache_path.join("cache").join(s)
+    cache_path.join(s)
 }
 
 fn is_cached_data_stale() -> std::io::Result<bool> {
@@ -112,27 +127,47 @@ fn is_cached_data_stale() -> std::io::Result<bool> {
     let mut f = File::open(get_config_path())?;
     let hash = Blake2b::digest_reader(&mut f)?; 
     let hash = format!("{:x}", hash);
-    Ok(hash == cached_hash)
+    Ok(hash != cached_hash)
 }
 
 fn update_config_hash() -> std::io::Result<()> {
-    // TODO
-    Ok(())
+    let mut f = File::open(get_config_path())?;
+    let hash = Blake2b::digest_reader(&mut f)?;
+    let hash = format!("{:x}", hash);
+    write(get_cache_path("config.hash"), &hash)
 }
 
 fn load_and_cache_amojis() -> std::io::Result<HashMap<String, String>> {
-    let mut amoji_map = HashMap::new();
-    if is_cached_data_stale()? {
-        // read config
-        let config = read_config()?;
-        // write cached sha
-        update_config_hash()?;
-        // build_amoji_map (persistent)
-        let value = config.parse::<Value>().expect("invalid toml in amoji.toml!");
-        amoji_map = build_amoji_map(&value);
+    let cache_path = get_cache_path("amoji.map");
+    if !cache_path.is_file() || is_cached_data_stale()? {
+        println!("building amoji map"); // TODO use debug flag here
+        build_and_cache_map()
+    } else {
+        println!("loading amoji map from disk");
+        // read map from disk
+        let map = serde_json::from_str(&read_cached_map()?);
+        match map {
+            Ok(map) => Ok(map),
+            Err(_) => {
+                println!("failed to load, building instead");
+                build_and_cache_map()
+            }
+        }
     }
-    // load persistent map from file
-    Ok(amoji_map)
+}
+
+fn build_and_cache_map() -> std::io::Result<HashMap<String, String>> {
+    // read config
+    let config = read_config()?;
+    // build_amoji_map
+    let value = config.parse::<Value>().expect("invalid toml in amoji.toml!");
+    // serialize and write to disk
+    let map = build_amoji_map(&value);
+    let json = serde_json::to_string(&map).expect("error serializing amoji map!");
+    write_cached_map(&json);
+    // write cached sha
+    update_config_hash()?;
+    Ok(map)
 }
 
 fn build_amoji_map(toml_value: &Value) -> HashMap<String, String> {
