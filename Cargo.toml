@@ -6,3 +6,8 @@ authors = ["Matt Friedman <matt@friedm.com>"]
 [dependencies]
 toml = "0.4"
 clap = "2.31"
+app_dirs = "1.2.1"
+persistent_hashmap = "0.1.4"
+blake2 = "0.7"
+digest = { version = "0.7", features = ["std"]}
+time = "0.1"
