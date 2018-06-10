@@ -43,10 +43,10 @@ fn main() {
     let t1 = precise_time_ns();
     setup_config().expect("failed to write default config file!");
     let t2 = precise_time_ns();
-    let amoji_map = load_and_cache_amojis().expect("failed to load amoji map!");
+    let emote_map = load_and_cache_emotes().expect("failed to load emote map!");
     let t3 = precise_time_ns();
-    match amoji_map.get(text) {
-        Some(amoji) => {
+    match emote_map.get(text) {
+        Some(emote) => {
             let t4 = precise_time_ns();
             if debug {
                 println!("\
@@ -59,7 +59,7 @@ total:  {}us",
                          (t4-t3)/1000,
                          (t4-t1)/1000);
             }
-            println!("{}", amoji);
+            println!("{}", emote);
         }
         None => {
             println!("no match for {}", text);
@@ -85,7 +85,7 @@ fn write_config(s: &'static str) -> std::io::Result<()> {
 }
 
 fn write_cached_map<'a>(s: &'a str) -> std::io::Result<()> {
-    write(get_cache_path("amoji.map"), s)
+    write(get_cache_path("emote.map"), s)
 }
 
 fn write<'a>(path: PathBuf, s: &'a str) -> std::io::Result<()> { // TODO clean up
@@ -100,7 +100,7 @@ fn read_config() -> std::io::Result<String> {
 }
 
 fn read_cached_map() -> std::io::Result<String> {
-    read(get_cache_path("amoji.map"))
+    read(get_cache_path("emote.map"))
 }
 
 fn read(path: PathBuf) -> std::io::Result<String> {
@@ -137,13 +137,13 @@ fn update_config_hash() -> std::io::Result<()> {
     write(get_cache_path("config.hash"), &hash)
 }
 
-fn load_and_cache_amojis() -> std::io::Result<HashMap<String, String>> {
-    let cache_path = get_cache_path("amoji.map");
+fn load_and_cache_emotes() -> std::io::Result<HashMap<String, String>> {
+    let cache_path = get_cache_path("emote.map");
     if !cache_path.is_file() || is_cached_data_stale()? {
-        println!("building amoji map"); // TODO use debug flag here
+        println!("building emote map"); // TODO use debug flag here
         build_and_cache_map()
     } else {
-        println!("loading amoji map from disk");
+        println!("loading emote map from disk");
         // read map from disk
         let map = serde_json::from_str(&read_cached_map()?);
         match map {
@@ -159,36 +159,40 @@ fn load_and_cache_amojis() -> std::io::Result<HashMap<String, String>> {
 fn build_and_cache_map() -> std::io::Result<HashMap<String, String>> {
     // read config
     let config = read_config()?;
-    // build_amoji_map
-    let value = config.parse::<Value>().expect("invalid toml in amoji.toml!");
+    // build_emote_map
+    let value = config.parse::<Value>().expect("invalid toml in emote.toml!");
     // serialize and write to disk
-    let map = build_amoji_map(&value);
-    let json = serde_json::to_string(&map).expect("error serializing amoji map!");
-    write_cached_map(&json);
+    let map = build_emote_map(&value);
+    let json = serde_json::to_string(&map).expect("error serializing emote map!");
+    write_cached_map(&json)?;
     // write cached sha
     update_config_hash()?;
     Ok(map)
 }
 
-fn build_amoji_map(toml_value: &Value) -> HashMap<String, String> {
+fn build_emote_map(toml_value: &Value) -> HashMap<String, String> {
     let mut map = HashMap::new();
 
-    for (_, item) in toml_value["amoji"].as_table()
-                                        .expect("unexpected amoji toml!")
+    for (_, item) in toml_value["multi"].as_table()
+                                        .expect("unexpected multi toml!")
                                         .into_iter() {
         let item = item.as_table()
-                       .expect(&format!("unexpected amoji toml: {:?}", item));
-        let amoji = item["amoji"].as_str()
-                                 .expect(&format!("missing amoji in toml: {:?}", item))
+                       .expect(&format!("unexpected multi toml: {:?}", item));
+        let multi = item["multi"].as_str()
+                                 .expect(&format!("missing multi in toml: {:?}", item))
                                  .clone();
         let words = item["words"].as_array()
                                  .expect(&format!("missing words in toml: {:?}", item));
         for word in words {
             let word = word.as_str()
                            .expect(&format!("missing word in toml: {:?}", item));
-            map.insert(word.to_string(), amoji.to_string());
+            map.insert(word.to_string(), multi.to_string());
         }
     }
 
     map
 }
+
+// TODO integration tests -- config is put in place, hash of config works, persistent map works,
+// basic happy path
+// TODO refactor

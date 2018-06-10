@@ -1,817 +1,817 @@
-[amoji]
-  [amoji.acid]
+[multi]
+  [multi.acid]
     words = ['acid']
-    amoji = '⊂(◉‿◉)つ'
-  [amoji.afraid]
+    multi = '⊂(◉‿◉)つ'
+  [multi.afraid]
     words = ['afraid']
-    amoji = '(ㆆ _ ㆆ)'
-  [amoji.angel]
+    multi = '(ㆆ _ ㆆ)'
+  [multi.angel]
     words = ['angel']
-    amoji = '☜(⌒▽⌒)☞'
-  [amoji.angry]
+    multi = '☜(⌒▽⌒)☞'
+  [multi.angry]
     words = ['angry']
-    amoji = '•`_´•'
-  [amoji.arrowhead]
+    multi = '•`_´•'
+  [multi.arrowhead]
     words = ['arrowhead']
-    amoji = '⤜(ⱺ ʖ̯ⱺ)⤏'
-  [amoji.apple]
+    multi = '⤜(ⱺ ʖ̯ⱺ)⤏'
+  [multi.apple]
     words = ['apple']
-    amoji = ''
-  [amoji.ass]
+    multi = ''
+  [multi.ass]
     words = ['ass', 'butt']
-    amoji = '(‿|‿)'
-  [amoji.awkward]
+    multi = '(‿|‿)'
+  [multi.awkward]
     words = ['awkward']
-    amoji = '•͡˘㇁•͡˘'
-  [amoji.bat]
+    multi = '•͡˘㇁•͡˘'
+  [multi.bat]
     words = ['bat']
-    amoji = '/|\\ ^._.^ /|\\'
-  [amoji.bear]
+    multi = '/|\\ ^._.^ /|\\'
+  [multi.bear]
     words = ['bear', 'koala']
-    amoji = 'ʕ·͡ᴥ·ʔ﻿'
-  [amoji.bearflip]
+    multi = 'ʕ·͡ᴥ·ʔ﻿'
+  [multi.bearflip]
     words = ['bearflip']
-    amoji = 'ʕノ•ᴥ•ʔノ ︵ ┻━┻'
-  [amoji.bearhug]
+    multi = 'ʕノ•ᴥ•ʔノ ︵ ┻━┻'
+  [multi.bearhug]
     words = ['bearhug']
-    amoji = 'ʕっ•ᴥ•ʔっ'
-  [amoji.because]
+    multi = 'ʕっ•ᴥ•ʔっ'
+  [multi.because]
     words = ['because', 'since']
-    amoji = '∵'
-  [amoji.bigheart]
+    multi = '∵'
+  [multi.bigheart]
     words = ['bigheart']
-    amoji = '❤'
-  [amoji.blackeye]
+    multi = '❤'
+  [multi.blackeye]
     words = ['blackeye']
-    amoji = '0__#'
-  [amoji.blubby]
+    multi = '0__#'
+  [multi.blubby]
     words = ['blubby']
-    amoji = '(      0    _   0    )'
-  [amoji.blush]
+    multi = '(      0    _   0    )'
+  [multi.blush]
     words = ['blush']
-    amoji = '(˵ ͡° ͜ʖ ͡°˵)'
-  [amoji.bond]
+    multi = '(˵ ͡° ͜ʖ ͡°˵)'
+  [multi.bond]
     words = ['bond', '007']
-    amoji = '┌( ͝° ͜ʖ͡°)=ε/̵͇̿̿/’̿’̿ ̿'
-  [amoji.boobs]
+    multi = '┌( ͝° ͜ʖ͡°)=ε/̵͇̿̿/’̿’̿ ̿'
+  [multi.boobs]
     words = ['boobs']
-    amoji = '( . Y . )'
-  [amoji.bored]
+    multi = '( . Y . )'
+  [multi.bored]
     words = ['bored']
-    amoji = '(-_-)'
-  [amoji.bribe]
+    multi = '(-_-)'
+  [multi.bribe]
     words = ['bribe']
-    amoji = '( •͡˘ _•͡˘)ノð'
-  [amoji.bubbles]
+    multi = '( •͡˘ _•͡˘)ノð'
+  [multi.bubbles]
     words = ['bubbles']
-    amoji = '( ˘ ³˘)ノ°ﾟº❍｡'
-  [amoji.butterfly]
+    multi = '( ˘ ³˘)ノ°ﾟº❍｡'
+  [multi.butterfly]
     words = ['butterfly']
-    amoji = 'ƸӜƷ'
-  [amoji.cat]
+    multi = 'ƸӜƷ'
+  [multi.cat]
     words = ['cat']
-    amoji = '(= ФェФ=)'
-  [amoji.catlenny]
+    multi = '(= ФェФ=)'
+  [multi.catlenny]
     words = ['catlenny']
-    amoji = '( ͡° ᴥ ͡°)﻿'
-  [amoji.checkmark]
+    multi = '( ͡° ᴥ ͡°)﻿'
+  [multi.checkmark]
     words = ['check']
-    amoji = '✓'
-  [amoji.chubby]
+    multi = '✓'
+  [multi.chubby]
     words = ['chubby']
-    amoji = '╭(ʘ̆~◞౪◟~ʘ̆)╮'
-  [amoji.claro]
+    multi = '╭(ʘ̆~◞౪◟~ʘ̆)╮'
+  [multi.claro]
     words = ['claro']
-    amoji = '(͡ ° ͜ʖ ͡ °)'
-  [amoji.clique]
+    multi = '(͡ ° ͜ʖ ͡ °)'
+  [multi.clique]
     words = ['clique', 'gang', 'squad']
-    amoji = 'ヽ༼ ຈل͜ຈ༼ ▀̿̿Ĺ̯̿̿▀̿ ̿༽Ɵ͆ل͜Ɵ͆ ༽ﾉ'
-  [amoji.cloud]
+    multi = 'ヽ༼ ຈل͜ຈ༼ ▀̿̿Ĺ̯̿̿▀̿ ̿༽Ɵ͆ل͜Ɵ͆ ༽ﾉ'
+  [multi.cloud]
     words = ['cloud']
-    amoji = '☁'
-  [amoji.club]
+    multi = '☁'
+  [multi.club]
     words = ['club']
-    amoji = '♣'
-  [amoji.coffee]
+    multi = '♣'
+  [multi.coffee]
     words = ['coffee', 'cuppa']
-    amoji = 'c[_]'
-  [amoji.command]
+    multi = 'c[_]'
+  [multi.command]
     words = ['cmd', 'command']
-    amoji = '⌘'
-  [amoji.cool]
+    multi = '⌘'
+  [multi.cool]
     words = ['cool', 'csi']
-    amoji = '(•_•) ( •_•)>⌐■-■ (⌐■_■)'
-  [amoji.copyright]
+    multi = '(•_•) ( •_•)>⌐■-■ (⌐■_■)'
+  [multi.copyright]
     words = ['copy','c']
-    amoji = '©'
-  [amoji.creep]
+    multi = '©'
+  [multi.creep]
     words = ['creep']
-    amoji = 'ԅ(≖‿≖ԅ)'
-  [amoji.creepcute]
+    multi = 'ԅ(≖‿≖ԅ)'
+  [multi.creepcute]
     words = ['creepcute']
-    amoji = 'ƪ(ړײ)‎ƪ​​'
-  [amoji.crim3s]
+    multi = 'ƪ(ړײ)‎ƪ​​'
+  [multi.crim3s]
     words = ['crim3s']
-    amoji = '( ✜︵✜ )'
-  [amoji.cross]
+    multi = '( ✜︵✜ )'
+  [multi.cross]
     words = ['cross']
-    amoji = '†'
-  [amoji.cry]
+    multi = '†'
+  [multi.cry]
     words = ['cry']
-    amoji = '(╥﹏╥)'
-  [amoji.crywave]
+    multi = '(╥﹏╥)'
+  [multi.crywave]
     words = ['crywave']
-    amoji = '( ╥﹏╥) ノシ'
-  [amoji.cute]
+    multi = '( ╥﹏╥) ノシ'
+  [multi.cute]
     words = ['cute']
-    amoji = '(｡◕‿‿◕｡)'
-  [amoji.d1]
+    multi = '(｡◕‿‿◕｡)'
+  [multi.d1]
     words = ['d1']
-    amoji = '⚀'
-  [amoji.d2]
+    multi = '⚀'
+  [multi.d2]
     words = ['d2']
-    amoji = '⚁'
-  [amoji.d3]
+    multi = '⚁'
+  [multi.d3]
     words = ['d3']
-    amoji = '⚂'
-  [amoji.d4]
+    multi = '⚂'
+  [multi.d4]
     words = ['d4']
-    amoji = '⚃'
-  [amoji.d5]
+    multi = '⚃'
+  [multi.d5]
     words = ['d5']
-    amoji = '⚄'
-  [amoji.d6]
+    multi = '⚄'
+  [multi.d6]
     words = ['d6']
-    amoji = '⚅'
-  [amoji.damnyou]
+    multi = '⚅'
+  [multi.damnyou]
     words = ['damnyou']
-    amoji = '(ᕗ ͠° ਊ ͠° )ᕗ'
-  [amoji.dance]
+    multi = '(ᕗ ͠° ਊ ͠° )ᕗ'
+  [multi.dance]
     words = ['dance']
-    amoji = 'ᕕ(⌐■_■)ᕗ ♪♬'
-  [amoji.dead]
+    multi = 'ᕕ(⌐■_■)ᕗ ♪♬'
+  [multi.dead]
     words = ['dead']
-    amoji = 'x⸑x'
-  [amoji.dealwithit]
+    multi = 'x⸑x'
+  [multi.dealwithit]
     words = ['dealwithit', 'dwi']
-    amoji = '(⌐■_■)'
-  [amoji.delta]
+    multi = '(⌐■_■)'
+  [multi.delta]
     words = ['delta']
-    amoji = 'Δ'
-  [amoji.depressed]
+    multi = 'Δ'
+  [multi.depressed]
     words = ['depressed']
-    amoji = '(︶︹︶)'
-  [amoji.derp]
+    multi = '(︶︹︶)'
+  [multi.derp]
     words = ['derp']
-    amoji = '☉ ‿ ⚆'
-  [amoji.diamond]
+    multi = '☉ ‿ ⚆'
+  [multi.diamond]
     words = ['diamond']
-    amoji = '♦'
-  [amoji.dog]
+    multi = '♦'
+  [multi.dog]
     words = ['dog']
-    amoji = '(◕ᴥ◕ʋ)'
-  [amoji.dollar]
+    multi = '(◕ᴥ◕ʋ)'
+  [multi.dollar]
     words = ['dollar']
-    amoji = '$'
-  [amoji.dong]
+    multi = '$'
+  [multi.dong]
     words = ['dong']
-    amoji = '(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄'
-  [amoji.donger]
+    multi = '(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄'
+  [multi.donger]
     words = ['donger']
-    amoji = 'ヽ༼ຈل͜ຈ༽ﾉ'
-  [amoji.dontcare]
+    multi = 'ヽ༼ຈل͜ຈ༽ﾉ'
+  [multi.dontcare]
     words = ['dontcare']
-    amoji = '╭∩╮（︶︿︶）╭∩╮'
-  [amoji.donotwant]
+    multi = '╭∩╮（︶︿︶）╭∩╮'
+  [multi.donotwant]
     words = ['do not want', 'dontwant']
-    amoji = 'ヽ(｀Д´)ﾉ'
-  [amoji.dope]
+    multi = 'ヽ(｀Д´)ﾉ'
+  [multi.dope]
     words = ['dope']
-    amoji = '<(^_^)>'
-  [amoji.doublequotesleft]
+    multi = '<(^_^)>'
+  [multi.doublequotesleft]
     words = ['<<']
-    amoji = '«'
-  [amoji.doublequotesright]
+    multi = '«'
+  [multi.doublequotesright]
     words = ['>>']
-    amoji = '»'
-  [amoji.doubleflat]
+    multi = '»'
+  [multi.doubleflat]
     words = ['doubleflat']
-    amoji = '𝄫'
-  [amoji.doublesharp]
+    multi = '𝄫'
+  [multi.doublesharp]
     words = ['doublesharp']
-    amoji = '𝄪'
-  [amoji.doubletableflip]
+    multi = '𝄪'
+  [multi.doubletableflip]
     words = ['doubletableflip']
-    amoji = '┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻'
-  [amoji.down]
+    multi = '┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻'
+  [multi.down]
     words = ['down']
-    amoji = '↓'
-  [amoji.duckface]
+    multi = '↓'
+  [multi.duckface]
     words = ['duckface']
-    amoji = '(・3・)'
-  [amoji.duel]
+    multi = '(・3・)'
+  [multi.duel]
     words = ['duel']
-    amoji = 'ᕕ(╭ರ╭ ͟ʖ╮•́)⊃¤=(————-'
-  [amoji.duh]
+    multi = 'ᕕ(╭ರ╭ ͟ʖ╮•́)⊃¤=(————-'
+  [multi.duh]
     words = ['duh']
-    amoji = '(≧︿≦)'
-  [amoji.dunnolol]
+    multi = '(≧︿≦)'
+  [multi.dunnolol]
     words = ['dunno']
-    amoji = '¯\\(°_o)/¯'
-  [amoji.ebola]
+    multi = '¯\\(°_o)/¯'
+  [multi.ebola]
     words = ['ebola']
-    amoji = 'ᴇʙᴏʟᴀ'
-  [amoji.ellipsis]
+    multi = 'ᴇʙᴏʟᴀ'
+  [multi.ellipsis]
     words = ['ellipsis', '...']
-    amoji = '…'
-  [amoji.emdash]
+    multi = '…'
+  [multi.emdash]
     words = ['emdash', '--']
-    amoji = '–'
-  [amoji.emptystar]
+    multi = '–'
+  [multi.emptystar]
     words = ['emptystar']
-    amoji = '☆'
-  [amoji.emptytriangle]
+    multi = '☆'
+  [multi.emptytriangle]
     words = ['emptytriangle', 't2']
-    amoji = '△'
-  [amoji.endure]
+    multi = '△'
+  [multi.endure]
     words = ['endure']
-    amoji = '(҂◡_◡) ᕤ'
-  [amoji.envelope]
+    multi = '(҂◡_◡) ᕤ'
+  [multi.envelope]
     words = ['envelope', 'letter']
-    amoji = '✉︎'
-  [amoji.epsilon]
+    multi = '✉︎'
+  [multi.epsilon]
     words = ['epsilon']
-    amoji = 'ɛ'
-  [amoji.euro]
+    multi = 'ɛ'
+  [multi.euro]
     words = ['euro']
-    amoji = '€'
-  [amoji.evil]
+    multi = '€'
+  [multi.evil]
     words = ['evil']
-    amoji = 'ψ(｀∇´)ψ'
-  [amoji.evillenny]
+    multi = 'ψ(｀∇´)ψ'
+  [multi.evillenny]
     words = ['evillenny']
-    amoji = '(͠≖ ͜ʖ͠≖)'
-  [amoji.execution]
+    multi = '(͠≖ ͜ʖ͠≖)'
+  [multi.execution]
     words = ['execution']
-    amoji = '(⌐■_■)︻╦╤─   (╥﹏╥)'
-  [amoji.facebook]
+    multi = '(⌐■_■)︻╦╤─   (╥﹏╥)'
+  [multi.facebook]
     words = ['facebook']
-    amoji = '(╯°□°)╯︵ ʞooqǝɔɐɟ'
-  [amoji.facepalm]
+    multi = '(╯°□°)╯︵ ʞooqǝɔɐɟ'
+  [multi.facepalm]
     words = ['facepalm']
-    amoji = '(－‸ლ)'
-  [amoji.fart]
+    multi = '(－‸ლ)'
+  [multi.fart]
     words = ['fart']
-    amoji = '(ˆ⺫ˆ๑)<3'
-  [amoji.fight]
+    multi = '(ˆ⺫ˆ๑)<3'
+  [multi.fight]
     words = ['fight']
-    amoji = '(ง •̀_•́)ง'
-  [amoji.finn]
+    multi = '(ง •̀_•́)ง'
+  [multi.finn]
     words = ['finn']
-    amoji = '| (• ◡•)|'
-  [amoji.fish]
+    multi = '| (• ◡•)|'
+  [multi.fish]
     words = ['fish']
-    amoji = '<"(((<3'
-  [amoji.five]
+    multi = '<"(((<3'
+  [multi.five]
     words = ['5', 'five']
-    amoji = '卌'
-  [amoji.fiveeights]
+    multi = '卌'
+  [multi.fiveeights]
     words = ['5/8']
-    amoji = '⅝'
-  [amoji.flat]
+    multi = '⅝'
+  [multi.flat]
     words = ['flat', 'bemolle']
-    amoji = '♭'
-  [amoji.flexing]
+    multi = '♭'
+  [multi.flexing]
     words = ['flexing']
-    amoji = 'ᕙ(`▽´)ᕗ'
-  [amoji.flipped]
+    multi = 'ᕙ(`▽´)ᕗ'
+  [multi.flipped]
     words = ['flipped', 'heavytable']
-    amoji = '┬─┬﻿ ︵ /(.□. \\）'
-  [amoji.flower]
+    multi = '┬─┬﻿ ︵ /(.□. \\）'
+  [multi.flower]
     words = ['flower', 'flor']
-    amoji = '(✿◠‿◠)'
-  [amoji.flower2]
+    multi = '(✿◠‿◠)'
+  [multi.flower2]
     words = ['f']
-    amoji = '✿'
-  [amoji.fly]
+    multi = '✿'
+  [multi.fly]
     words = ['fly']
-    amoji = '─=≡Σ((( つ◕ل͜◕)つ'
-  [amoji.friendflip]
+    multi = '─=≡Σ((( つ◕ل͜◕)つ'
+  [multi.friendflip]
     words = ['friendflip']
-    amoji = '(╯°□°)╯︵ ┻━┻ ︵ ╯(°□° ╯)'
-  [amoji.frown]
+    multi = '(╯°□°)╯︵ ┻━┻ ︵ ╯(°□° ╯)'
+  [multi.frown]
     words = ['frown']
-    amoji = '(ღ˘⌣˘ღ)'
-  [amoji.fuckoff]
+    multi = '(ღ˘⌣˘ღ)'
+  [multi.fuckoff]
     words = ['fuckoff', 'gtfo']
-    amoji = '୧༼ಠ益ಠ╭∩╮༽'
-  [amoji.fuckyou]
+    multi = '୧༼ಠ益ಠ╭∩╮༽'
+  [multi.fuckyou]
     words = ['fuckyou', 'fu']
-    amoji = '┌П┐(ಠ_ಠ)'
-  [amoji.gentleman]
+    multi = '┌П┐(ಠ_ಠ)'
+  [multi.gentleman]
     words = ['gentleman', 'sir', 'monocle']
-    amoji = 'ಠ_ರೃ'
-  [amoji.ghast]
+    multi = 'ಠ_ರೃ'
+  [multi.ghast]
     words = ['ghast']
-    amoji = '= _ ='
-  [amoji.ghost]
+    multi = '= _ ='
+  [multi.ghost]
     words = ['ghost']
-    amoji = '༼ つ ❍_❍ ༽つ'
-  [amoji.gift]
+    multi = '༼ つ ❍_❍ ༽つ'
+  [multi.gift]
     words = ['gift', 'present']
-    amoji = '(´・ω・)っ由'
-  [amoji.gimme]
+    multi = '(´・ω・)っ由'
+  [multi.gimme]
     words = ['gimme']
-    amoji = '༼ つ ◕_◕ ༽つ'
-  [amoji.glitterbomb]
+    multi = '༼ つ ◕_◕ ༽つ'
+  [multi.glitterbomb]
     words = ['glitter']
-    amoji = '(*・‿・)ノ⌒*:･ﾟ✧'
-  [amoji.glasses]
+    multi = '(*・‿・)ノ⌒*:･ﾟ✧'
+  [multi.glasses]
     words = ['glasses']
-    amoji = '(⌐ ͡■ ͜ʖ ͡■)'
-  [amoji.glassesoff]
+    multi = '(⌐ ͡■ ͜ʖ ͡■)'
+  [multi.glassesoff]
     words = ['glassesoff']
-    amoji = '( ͡° ͜ʖ ͡°)ﾉ⌐■-■'
-  [amoji.glitterderp]
+    multi = '( ͡° ͜ʖ ͡°)ﾉ⌐■-■'
+  [multi.glitterderp]
     words = ['glitterderp']
-    amoji = '(ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧'
-  [amoji.gloomy]
+    multi = '(ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧'
+  [multi.gloomy]
     words = ['gloomy']
-    amoji = '(_゜_゜_)'
-  [amoji.goatse]
+    multi = '(_゜_゜_)'
+  [multi.goatse]
     words = ['goatse']
-    amoji = '(з๏ε)'
-  [amoji.gotit]
+    multi = '(з๏ε)'
+  [multi.gotit]
     words = ['gotit']
-    amoji = '(☞ﾟ∀ﾟ)☞'
-  [amoji.greet]
+    multi = '(☞ﾟ∀ﾟ)☞'
+  [multi.greet]
     words = ['greet', 'greetings']
-    amoji = '( ´◔ ω◔`) ノシ'
-  [amoji.gun]
+    multi = '( ´◔ ω◔`) ノシ'
+  [multi.gun]
     words = ['gun', 'mg']
-    amoji = '︻╦╤─'
-  [amoji.hadouken]
+    multi = '︻╦╤─'
+  [multi.hadouken]
     words = ['hadouken']
-    amoji = '༼つಠ益ಠ༽つ ─=≡ΣO))'
-  [amoji.hammerandsickle]
+    multi = '༼つಠ益ಠ༽つ ─=≡ΣO))'
+  [multi.hammerandsickle]
     words = ['hammerandsickle', 'hs']
-    amoji = '☭'
-  [amoji.handleft]
+    multi = '☭'
+  [multi.handleft]
     words = ['handleft', 'hl']
-    amoji = '☜'
-  [amoji.handright]
+    multi = '☜'
+  [multi.handright]
     words = ['handright', 'hr']
-    amoji = '☞'
-  [amoji.haha]
+    multi = '☞'
+  [multi.haha]
     words = ['haha']
-    amoji = '٩(^‿^)۶'
-  [amoji.happy]
+    multi = '٩(^‿^)۶'
+  [multi.happy]
     words = ['happy']
-    amoji = '٩( ๑╹ ꇴ╹)۶'
-  [amoji.happygarry]
+    multi = '٩( ๑╹ ꇴ╹)۶'
+  [multi.happygarry]
     words = ['happygarry']
-    amoji = 'ᕕ( ᐛ )ᕗ'
-  [amoji.heart]
+    multi = 'ᕕ( ᐛ )ᕗ'
+  [multi.heart]
     words = ['h', 'heart']
-    amoji = '♥'
-  [amoji.hello]
+    multi = '♥'
+  [multi.hello]
     words = ['hello', 'ohai', 'bye']
-    amoji = '(ʘ‿ʘ)╯'
-  [amoji.highfive]
+    multi = '(ʘ‿ʘ)╯'
+  [multi.highfive]
     words = ['highfive']
-    amoji = '._.)/\\(._.'
-  [amoji.hitting]
+    multi = '._.)/\\(._.'
+  [multi.hitting]
     words = ['hitting']
-    amoji = '( ｀皿´)｡ﾐ/'
-  [amoji.hugs]
+    multi = '( ｀皿´)｡ﾐ/'
+  [multi.hugs]
     words = ['hug', 'hugs']
-    amoji = '(づ｡◕‿‿◕｡)づ'
-  [amoji.iknowright]
+    multi = '(づ｡◕‿‿◕｡)づ'
+  [multi.iknowright]
     words = ['iknowright', 'ikr']
-    amoji = '┐｜･ิω･ิ#｜┌'
-  [amoji.illuminati]
+    multi = '┐｜･ิω･ิ#｜┌'
+  [multi.illuminati]
     words = ['illuminati']
-    amoji = '୧(▲ᴗ▲)ノ'
-  [amoji.infinity]
+    multi = '୧(▲ᴗ▲)ノ'
+  [multi.infinity]
     words = ['infinity', 'inf']
-    amoji = '∞'
-  [amoji.inlove]
+    multi = '∞'
+  [multi.inlove]
     words = ['inlove']
-    amoji = '(っ´ω`c)♡'
-  [amoji.integral]
+    multi = '(っ´ω`c)♡'
+  [multi.integral]
     words = ['int']
-    amoji = '∫'
-  [amoji.internet]
+    multi = '∫'
+  [multi.internet]
     words = ['internet']
-    amoji = 'ଘ(੭*ˊᵕˋ)੭* ̀ˋ ɪɴᴛᴇʀɴᴇᴛ'
-  [amoji.interrobang]
+    multi = 'ଘ(੭*ˊᵕˋ)੭* ̀ˋ ɪɴᴛᴇʀɴᴇᴛ'
+  [multi.interrobang]
     words = ['interrobang']
-    amoji = '‽'
-  [amoji.jake]
+    multi = '‽'
+  [multi.jake]
     words = ['jake']
-    amoji = '(❍ᴥ❍ʋ)'
-  [amoji.kawaii]
+    multi = '(❍ᴥ❍ʋ)'
+  [multi.kawaii]
     words = ['kawaii']
-    amoji = '≧◡≦'
-  [amoji.keen]
+    multi = '≧◡≦'
+  [multi.keen]
     words = ['keen']
-    amoji = '┬┴┬┴┤Ɵ͆ل͜Ɵ͆ ༽ﾉ'
-  [amoji.kiahh]
+    multi = '┬┴┬┴┤Ɵ͆ل͜Ɵ͆ ༽ﾉ'
+  [multi.kiahh]
     words = ['kiahh']
-    amoji = '~\\(≧▽≦)/~'
-  [amoji.kiss]
+    multi = '~\\(≧▽≦)/~'
+  [multi.kiss]
     words = ['kiss']
-    amoji = '(づ ￣ ³￣)づ'
-  [amoji.kyubey]
+    multi = '(づ ￣ ³￣)づ'
+  [multi.kyubey]
     words = ['kyubey']
-    amoji = '／人◕ ‿‿ ◕人＼'
-  [amoji.lambda]
+    multi = '／人◕ ‿‿ ◕人＼'
+  [multi.lambda]
     words = ['lambda']
-    amoji = 'λ'
-  [amoji.lazy]
+    multi = 'λ'
+  [multi.lazy]
     words = ['lazy']
-    amoji = '_(:3」∠)_'
-  [amoji.left]
+    multi = '_(:3」∠)_'
+  [multi.left]
     words = ['left', '<-']
-    amoji = '←'
-  [amoji.lenny]
+    multi = '←'
+  [multi.lenny]
     words = ['lenny']
-    amoji = '( ͡° ͜ʖ ͡°)'
-  [amoji.lennybill]
+    multi = '( ͡° ͜ʖ ͡°)'
+  [multi.lennybill]
     words = ['lennybill']
-    amoji = '[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]'
-  [amoji.lennyfight]
+    multi = '[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]'
+  [multi.lennyfight]
     words = ['lennyfight']
-    amoji = '(ง ͠° ͟ʖ ͡°)ง'
-  [amoji.lennyflip]
+    multi = '(ง ͠° ͟ʖ ͡°)ง'
+  [multi.lennyflip]
     words = ['lennyflip']
-    amoji = '(ノ ͡° ͜ʖ ͡°ノ)   ︵ ( ͜。 ͡ʖ ͜。)'
-  [amoji.lennygang]
+    multi = '(ノ ͡° ͜ʖ ͡°ノ)   ︵ ( ͜。 ͡ʖ ͜。)'
+  [multi.lennygang]
     words = ['lennygang']
-    amoji = '( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)'
-  [amoji.lennyshrug]
+    multi = '( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)'
+  [multi.lennyshrug]
     words = ['lennyshrug']
-    amoji = '¯\\_( ͡° ͜ʖ ͡°)_/¯'
-  [amoji.lennysir]
+    multi = '¯\\_( ͡° ͜ʖ ͡°)_/¯'
+  [multi.lennysir]
     words = ['lennysir']
-    amoji = '( ಠ ͜ʖ ರೃ)'
-  [amoji.lennystalker]
+    multi = '( ಠ ͜ʖ ರೃ)'
+  [multi.lennystalker]
     words = ['lennystalker']
-    amoji = '┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴'
-  [amoji.lennystrong]
+    multi = '┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴'
+  [multi.lennystrong]
     words = ['lennystrong']
-    amoji = 'ᕦ( ͡° ͜ʖ ͡°)ᕤ'
-  [amoji.lennywizard]
+    multi = 'ᕦ( ͡° ͜ʖ ͡°)ᕤ'
+  [multi.lennywizard]
     words = ['lennywizard']
-    amoji = '╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ'
-  [amoji.lol]
+    multi = '╰( ͡° ͜ʖ ͡° )つ──☆*:・ﾟ'
+  [multi.lol]
     words = ['lol']
-    amoji = 'L(° O °L)'
-  [amoji.look]
+    multi = 'L(° O °L)'
+  [multi.look]
     words = ['look']
-    amoji = '(ಡ_ಡ)☞'
-  [amoji.love]
+    multi = '(ಡ_ಡ)☞'
+  [multi.love]
     words = ['love']
-    amoji = '♥‿♥'
-  [amoji.lovebear]
+    multi = '♥‿♥'
+  [multi.lovebear]
     words = ['lovebear']
-    amoji = 'ʕ♥ᴥ♥ʔ'
-  [amoji.lumpy]
+    multi = 'ʕ♥ᴥ♥ʔ'
+  [multi.lumpy]
     words = ['lumpy']
-    amoji = '꒰ ꒡⌓꒡꒱'
-  [amoji.luv]
+    multi = '꒰ ꒡⌓꒡꒱'
+  [multi.luv]
     words = ['luv']
-    amoji = '-`ღ´-'
-  [amoji.magic]
+    multi = '-`ღ´-'
+  [multi.magic]
     words = ['magic']
-    amoji = 'ヽ(｀Д´)⊃━☆ﾟ. * ･ ｡ﾟ,'
-  [amoji.magicflip]
+    multi = 'ヽ(｀Д´)⊃━☆ﾟ. * ･ ｡ﾟ,'
+  [multi.magicflip]
     words = ['magicflip']
-    amoji = '(/¯◡ ‿ ◡)/¯ ~ ┻━┻'
-  [amoji.meep]
+    multi = '(/¯◡ ‿ ◡)/¯ ~ ┻━┻'
+  [multi.meep]
     words = ['meep']
-    amoji = '\\(°^°)/'
-  [amoji.meh]
+    multi = '\\(°^°)/'
+  [multi.meh]
     words = ['meh']
-    amoji = 'ಠ_ಠ'
-  [amoji.mistyeyes]
+    multi = 'ಠ_ಠ'
+  [multi.mistyeyes]
     words = ['mistyeyes']
-    amoji = 'ಡ_ಡ'
-  [amoji.monster]
+    multi = 'ಡ_ಡ'
+  [multi.monster]
     words = ['monster']
-    amoji = '༼ ༎ຶ ෴ ༎ຶ༽'
-  [amoji.natural]
+    multi = '༼ ༎ຶ ෴ ༎ຶ༽'
+  [multi.natural]
     words = ['natural']
-    amoji = '♮'
-  [amoji.needle]
+    multi = '♮'
+  [multi.needle]
     words = ['needle', 'inject']
-    amoji = '┌(◉ ͜ʖ◉)つ┣▇▇▇═──'
-  [amoji.nice]
+    multi = '┌(◉ ͜ʖ◉)つ┣▇▇▇═──'
+  [multi.nice]
     words = ['nice']
-    amoji = '( ͡° ͜ °)'
-  [amoji.no]
+    multi = '( ͡° ͜ °)'
+  [multi.no]
     words = ['no']
-    amoji = '→_←'
-  [amoji.noclue]
+    multi = '→_←'
+  [multi.noclue]
     words = ['noclue']
-    amoji = '／人◕ __ ◕人＼'
-  [amoji.nom]
+    multi = '／人◕ __ ◕人＼'
+  [multi.nom]
     words = ['nom', 'yummy', 'delicious']
-    amoji = '(っˆڡˆς)'
-  [amoji.note]
+    multi = '(っˆڡˆς)'
+  [multi.note]
     words = ['note', 'sing']
-    amoji = '♫'
-  [amoji.nuclear]
+    multi = '♫'
+  [multi.nuclear]
     words = ['nuclear', 'radioactive', 'nukular']
-    amoji = '☢'
-  [amoji.nyan]
+    multi = '☢'
+  [multi.nyan]
     words = ['nyan']
-    amoji = '~=[,,_,,]:3'
-  [amoji.nyeh]
+    multi = '~=[,,_,,]:3'
+  [multi.nyeh]
     words = ['nyeh']
-    amoji = '@^@'
-  [amoji.ohshit]
+    multi = '@^@'
+  [multi.ohshit]
     words = ['ohshit']
-    amoji = '( º﹃º )'
-  [amoji.omg]
+    multi = '( º﹃º )'
+  [multi.omg]
     words = ['omg']
-    amoji = '◕_◕'
-  [amoji.oneeighth]
+    multi = '◕_◕'
+  [multi.oneeighth]
     words = ['1/8']
-    amoji = '⅛'
-  [amoji.onefourth]
+    multi = '⅛'
+  [multi.onefourth]
     words = ['1/4']
-    amoji = '¼'
-  [amoji.onehalf]
+    multi = '¼'
+  [multi.onehalf]
     words = ['1/2']
-    amoji = '½'
-  [amoji.onethird]
+    multi = '½'
+  [multi.onethird]
     words = ['1/3']
-    amoji = '⅓'
-  [amoji.option]
+    multi = '⅓'
+  [multi.option]
     words = ['opt', 'option']
-    amoji = '⌥'
-  [amoji.ohreally]
+    multi = '⌥'
+  [multi.ohreally]
     words = ['orly']
-    amoji = '(눈_눈)'
-  [amoji.ohyou]
+    multi = '(눈_눈)'
+  [multi.ohyou]
     words = ['ohyou', 'ou']
-    amoji = '(◞థ౪థ)ᴖ'
-  [amoji.peace]
+    multi = '(◞థ౪థ)ᴖ'
+  [multi.peace]
     words = ['peace', 'victory']
-    amoji = '✌(-‿-)✌'
-  [amoji.pear]
+    multi = '✌(-‿-)✌'
+  [multi.pear]
     words = ['pear']
-    amoji = '(__>-'
-  [amoji.pi]
+    multi = '(__>-'
+  [multi.pi]
     words = ['pi']
-    amoji = 'π'
-  [amoji.pingpong]
+    multi = 'π'
+  [multi.pingpong]
     words = ['pingpong']
-    amoji = '( •_•)O*¯`·.¸.·´¯`°Q(•_• )'
-  [amoji.plain]
+    multi = '( •_•)O*¯`·.¸.·´¯`°Q(•_• )'
+  [multi.plain]
     words = ['plain']
-    amoji = '._.'
-  [amoji.pleased]
+    multi = '._.'
+  [multi.pleased]
     words = ['pleased']
-    amoji = '(˶‾᷄ ⁻̫ ‾᷅˵)'
-  [amoji.point]
+    multi = '(˶‾᷄ ⁻̫ ‾᷅˵)'
+  [multi.point]
     words = ['point']
-    amoji = '(☞ﾟヮﾟ)☞'
-  [amoji.pooh]
+    multi = '(☞ﾟヮﾟ)☞'
+  [multi.pooh]
     words = ['pooh']
-    amoji = 'ʕ •́؈•̀)'
-  [amoji.pound]
+    multi = 'ʕ •́؈•̀)'
+  [multi.pound]
     words = ['pound']
-    amoji = '£'
-  [amoji.praise]
+    multi = '£'
+  [multi.praise]
     words = ['praise']
-    amoji = '(☝ ՞ਊ ՞)☝'
-  #[amoji.punch]
+    multi = '(☝ ՞ਊ ՞)☝'
+  #[multi.punch]
   #  words = ['punch']
-  #  amoji = 'O=(\'-\'Q)'
-  [amoji.rage]
+  #  multi = 'O=(\'-\'Q)'
+  [multi.rage]
     words = ['rage', 'mad']
-    amoji = 't(ಠ益ಠt)'
-  [amoji.rageflip]
+    multi = 't(ಠ益ಠt)'
+  [multi.rageflip]
     words = ['rageflip']
-    amoji = '(ノಠ益ಠ)ノ彡┻━┻'
-  [amoji.rainbowcat]
+    multi = '(ノಠ益ಠ)ノ彡┻━┻'
+  [multi.rainbowcat]
     words = ['rainbowcat']
-    amoji = '(=^･ｪ･^=))ﾉ彡☆'
-  [amoji.really]
+    multi = '(=^･ｪ･^=))ﾉ彡☆'
+  [multi.really]
     words = ['really']
-    amoji = 'ò_ô'
-  [amoji.registered]
+    multi = 'ò_ô'
+  [multi.registered]
     words = ['r']
-    amoji = '®'
-  [amoji.right]
+    multi = '®'
+  [multi.right]
     words = ['right', '->']
-    amoji = '→'
-  [amoji.riot]
+    multi = '→'
+  [multi.riot]
     words = ['riot']
-    amoji = '୧༼ಠ益ಠ༽୨'
-  [amoji.rolleyes]
+    multi = '୧༼ಠ益ಠ༽୨'
+  [multi.rolleyes]
     words = ['rolleyes']
-    amoji = '(◔_◔)'
-  [amoji.rose ]
+    multi = '(◔_◔)'
+  [multi.rose ]
     words = ['rose']
-    amoji = '✿ڿڰۣ—'
-  [amoji.run]
+    multi = '✿ڿڰۣ—'
+  [multi.run]
     words = ['run']
-    amoji = '(╯°□°)╯'
-  [amoji.sad]
+    multi = '(╯°□°)╯'
+  [multi.sad]
     words = ['sad']
-    amoji = 'ε(´סּ︵סּ`)з'
-  [amoji.saddonger]
+    multi = 'ε(´סּ︵סּ`)з'
+  [multi.saddonger]
     words = ['saddonger']
-    amoji = 'ヽ༼ຈʖ̯ຈ༽ﾉ'
-  [amoji.sadlenny]
+    multi = 'ヽ༼ຈʖ̯ຈ༽ﾉ'
+  [multi.sadlenny]
     words = ['sadlenny']
-    amoji = '( ͡° ʖ̯ ͡°)'
-  [amoji.seveneigths]
+    multi = '( ͡° ʖ̯ ͡°)'
+  [multi.seveneigths]
     words = ['7/8']
-    amoji = '⅞'
-  [amoji.sharp]
+    multi = '⅞'
+  [multi.sharp]
     words = ['sharp', 'diesis']
-    amoji = '♯'
-  [amoji.shout]
+    multi = '♯'
+  [multi.shout]
     words = ['shout']
-    amoji = '╚(•⌂•)╝'
-  [amoji.shrug]
+    multi = '╚(•⌂•)╝'
+  [multi.shrug]
     words = ['shrug']
-    amoji = '¯\\_(ツ)_/¯'
-  [amoji.shy]
+    multi = '¯\\_(ツ)_/¯'
+  [multi.shy]
     words = ['shy']
-    amoji = '=^_^='
-  [amoji.sigma]
+    multi = '=^_^='
+  [multi.sigma]
     words = ['sigma', 'sum']
-    amoji = 'Σ'
-  [amoji.skull]
+    multi = 'Σ'
+  [multi.skull]
     words = ['skull']
-    amoji = '☠'
-  [amoji.smile]
+    multi = '☠'
+  [multi.smile]
     words = ['smile']
-    amoji = 'ツ'
-  [amoji.smiley]
+    multi = 'ツ'
+  [multi.smiley]
     words = ['smiley']
-    amoji = '☺︎'
-  [amoji.smirk]
+    multi = '☺︎'
+  [multi.smirk]
     words = ['smirk']
-    amoji = '¬‿¬'
-  [amoji.snowman]
+    multi = '¬‿¬'
+  [multi.snowman]
     words = ['snowman']
-    amoji = '☃'
-  [amoji.sob]
+    multi = '☃'
+  [multi.sob]
     words = ['sob']
-    amoji = '(;´༎ຶД༎ຶ`)'
-  [amoji.spade]
+    multi = '(;´༎ຶД༎ຶ`)'
+  [multi.spade]
     words = ['spade']
-    amoji = '♠'
-  [amoji.squareroot]
+    multi = '♠'
+  [multi.squareroot]
     words = ['sqrt']
-    amoji = '√'
-  [amoji.squid]
+    multi = '√'
+  [multi.squid]
     words = ['squid']
-    amoji = '<コ:彡'
-  [amoji.star]
+    multi = '<コ:彡'
+  [multi.star]
     words = ['star']
-    amoji = '★'
-  [amoji.strong]
+    multi = '★'
+  [multi.strong]
     words = ['strong']
-    amoji = 'ᕙ(⇀‸↼‶)ᕗ'
-  [amoji.suicide]
+    multi = 'ᕙ(⇀‸↼‶)ᕗ'
+  [multi.suicide]
     words = ['suicide']
-    amoji = 'ε/̵͇̿̿/’̿’̿ ̿(◡︵◡)'
-  [amoji.sum]
+    multi = 'ε/̵͇̿̿/’̿’̿ ̿(◡︵◡)'
+  [multi.sum]
     words = ['sum']
-    amoji = '∑'
-  [amoji.sun]
+    multi = '∑'
+  [multi.sun]
     words = ['sun']
-    amoji = '☀'
-  [amoji.surprised]
+    multi = '☀'
+  [multi.surprised]
     words = ['surprised']
-    amoji = '(๑•́ ヮ •̀๑)'
-  [amoji.surrender]
+    multi = '(๑•́ ヮ •̀๑)'
+  [multi.surrender]
     words = ['surrender']
-    amoji = '\\_(-_-)_/'
-  [amoji.stalker]
+    multi = '\\_(-_-)_/'
+  [multi.stalker]
     words = ['stalker']
-    amoji = '┬┴┬┴┤(･_├┬┴┬┴'
-  [amoji.swag]
+    multi = '┬┴┬┴┤(･_├┬┴┬┴'
+  [multi.swag]
     words = ['swag']
-    amoji = '(̿▀̿‿ ̿▀̿ ̿)'
-  [amoji.sword]
+    multi = '(̿▀̿‿ ̿▀̿ ̿)'
+  [multi.sword]
     words = ['sword']
-    amoji = 'o()xxxx[{::::::::::::::::::>'
-  [amoji.tabledown]
+    multi = 'o()xxxx[{::::::::::::::::::>'
+  [multi.tabledown]
     words = ['tabledown']
-    amoji = '┬─┬﻿ ノ( ゜-゜ノ)'
-  [amoji.tableflip]
+    multi = '┬─┬﻿ ノ( ゜-゜ノ)'
+  [multi.tableflip]
     words = ['tableflip']
-    amoji = '(ノ ゜Д゜)ノ ︵ ┻━┻'
-  [amoji.tau]
+    multi = '(ノ ゜Д゜)ノ ︵ ┻━┻'
+  [multi.tau]
     words = ['tau']
-    amoji = 'τ'
-  [amoji.tears]
+    multi = 'τ'
+  [multi.tears]
     words = ['tears']
-    amoji = '(ಥ﹏ಥ)'
-  [amoji.terrorist]
+    multi = '(ಥ﹏ಥ)'
+  [multi.terrorist]
     words = ['terrorist']
-    amoji = '୧༼ಠ益ಠ༽︻╦╤─'
-  [amoji.thanks]
+    multi = '୧༼ಠ益ಠ༽︻╦╤─'
+  [multi.thanks]
     words = ['thanks', 'thankyou', 'ty']
-    amoji = '\\(^-^)/'
-  [amoji.therefore]
+    multi = '\\(^-^)/'
+  [multi.therefore]
     words = ['therefore', 'so']
-    amoji = '⸫'
-  [amoji.threeeights]
+    multi = '⸫'
+  [multi.threeeights]
     words = ['3/8']
-    amoji = '⅜'
-  [amoji.tiefighter]
+    multi = '⅜'
+  [multi.tiefighter]
     words = ['tiefighter']
-    amoji = '|=-(¤)-=|'
-  [amoji.tired]
+    multi = '|=-(¤)-=|'
+  [multi.tired]
     words = ['tired']
-    amoji = '(=____=)'
-  [amoji.toldyouso]
+    multi = '(=____=)'
+  [multi.toldyouso]
     words = ['toldyouso', 'toldyou']
-    amoji = '☜(꒡⌓꒡)'
-  [amoji.toogood]
+    multi = '☜(꒡⌓꒡)'
+  [multi.toogood]
     words = ['toogood']
-    amoji = 'ᕦ(òᴥó)ᕥ'
-  [amoji.trademark]
+    multi = 'ᕦ(òᴥó)ᕥ'
+  [multi.trademark]
     words = ['tm']
-    amoji = '™'
-  [amoji.triangle]
+    multi = '™'
+  [multi.triangle]
     words = ['triangle', 't']
-    amoji = '▲'
-  [amoji.twothirds]
+    multi = '▲'
+  [multi.twothirds]
     words = ['2/3']
-    amoji = '⅔'
-  [amoji.unflip]
+    multi = '⅔'
+  [multi.unflip]
     words = ['unflip']
-    amoji = '┬──┬ ノ(ò_óノ)'
-  [amoji.up]
+    multi = '┬──┬ ノ(ò_óノ)'
+  [multi.up]
     words = ['up']
-    amoji = '↑'
-  [amoji.victory]
+    multi = '↑'
+  [multi.victory]
     words = ['victory']
-    amoji = '(๑•̀ㅂ•́)ง✧'
-  [amoji.wat]
+    multi = '(๑•̀ㅂ•́)ง✧'
+  [multi.wat]
     words = ['wat']
-    amoji = '(ÒДÓױ)'
-  [amoji.wave]
+    multi = '(ÒДÓױ)'
+  [multi.wave]
     words = ['wave']
-    amoji = '( * ^ *) ノシ'
-  [amoji.whaa]
+    multi = '( * ^ *) ノシ'
+  [multi.whaa]
     words = ['whaa']
-    amoji = 'Ö'
-  [amoji.whistle]
+    multi = 'Ö'
+  [multi.whistle]
     words = ['whistle']
-    amoji = '(っ^з^)♪♬'
-  [amoji.whoa]
+    multi = '(っ^з^)♪♬'
+  [multi.whoa]
     words = ['whoa']
-    amoji = '(°o•)'
-  [amoji.why]
+    multi = '(°o•)'
+  [multi.why]
     words = ['why']
-    amoji = 'ლ(`◉◞౪◟◉‵ლ)'
-  [amoji.woo]
+    multi = 'ლ(`◉◞౪◟◉‵ლ)'
+  [multi.woo]
     words = ['woo']
-    amoji = '＼(＾O＾)／'
-  [amoji.wtf]
+    multi = '＼(＾O＾)／'
+  [multi.wtf]
     words = ['wtf']
-    amoji = '''(⊙＿⊙\')'''
-  [amoji.wut]
+    multi = '''(⊙＿⊙\')'''
+  [multi.wut]
     words = ['wut']
-    amoji = '⊙ω⊙'
-  [amoji.yay]
+    multi = '⊙ω⊙'
+  [multi.yay]
     words = ['yay']
-    amoji = '\\( ﾟヮﾟ)/'
-  [amoji.yeah]
+    multi = '\\( ﾟヮﾟ)/'
+  [multi.yeah]
     words = ['yeah', 'yes']
-    amoji = '(•̀ᴗ•́)و ̑̑'
-  [amoji.yen]
+    multi = '(•̀ᴗ•́)و ̑̑'
+  [multi.yen]
     words = ['yen']
-    amoji = '¥'
-  [amoji.yinyang]
+    multi = '¥'
+  [multi.yinyang]
     words = ['yinyang', 'yy']
-    amoji = '☯'
-  [amoji.yolo]
+    multi = '☯'
+  [multi.yolo]
     words = ['yolo']
-    amoji = 'Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ'
-  [amoji.youkids]
+    multi = 'Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ'
+  [multi.youkids]
     words = ['youkids', 'ukids']
-    amoji = 'ლ༼>╭ ͟ʖ╮<༽ლ'
-  [amoji.yuno]
+    multi = 'ლ༼>╭ ͟ʖ╮<༽ლ'
+  [multi.yuno]
     words = ['y u no', 'yuno']
-    amoji = '(屮ﾟДﾟ)屮 Y U NO'
-  [amoji.zen]
+    multi = '(屮ﾟДﾟ)屮 Y U NO'
+  [multi.zen]
     words = ['zen', 'meditation', 'omm']
-    amoji = '⊹╰(⌣ʟ⌣)╯⊹'
-  [amoji.zoidberg]
+    multi = '⊹╰(⌣ʟ⌣)╯⊹'
+  [multi.zoidberg]
     words = ['zoidberg']
-    amoji = '(V) (°,,,,°) (V)'
-  [amoji.zombie]
+    multi = '(V) (°,,,,°) (V)'
+  [multi.zombie]
     words = ['zombie']
-    amoji = '[¬º-°]¬'
+    multi = '[¬º-°]¬'
