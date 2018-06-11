@@ -5,11 +5,12 @@ extern crate time;
 extern crate toml;
 extern crate serde_json;
 
-use std::process::exit;
 use std::collections::HashMap;
+use std::env;
 use std::fs::File;
-use std::path::PathBuf;
 use std::io::prelude::*;
+use std::path::PathBuf;
+use std::process::exit;
 
 use app_dirs::{AppInfo, app_root, app_dir, AppDataType};
 use blake2::{Blake2b, Digest};
@@ -24,6 +25,31 @@ const AUTHOR: &'static str = env!("CARGO_PKG_AUTHORS");
 const APP_INFO: AppInfo = AppInfo{name: NAME, author: AUTHOR};
 
 const DEFAULT_CONFIG: &'static str = include_str!("defaults.toml");
+
+fn get_config_path() -> PathBuf {
+    let config_dir_env = env::var("EMOTE_CONFIG_DIR");
+    let config_path = if config_dir_env.is_ok() {
+        let path = PathBuf::from(config_dir_env.unwrap());
+        std::fs::create_dir_all(&path).expect("failed to create config dir!");
+        path
+    } else {
+        app_root(AppDataType::UserConfig, &APP_INFO).expect("failed to get config path!")
+    };
+
+    config_path.join(&format!("{}.toml", NAME))
+}
+
+fn get_cache_path(s: &'static str) -> PathBuf {
+    let cache_dir_env = env::var("EMOTE_CACHE_DIR");
+    let cache_path = if cache_dir_env.is_ok() {
+        let path = PathBuf::from(cache_dir_env.unwrap());
+        std::fs::create_dir_all(&path).expect("failed to create cache dir!");
+        path
+    } else {
+        app_dir(AppDataType::UserCache, &APP_INFO, "cache").expect("failed to get cache path!")
+    };
+    cache_path.join(s)
+}
 
 fn main() {
     let cli_matches = App::new(NAME)
@@ -75,11 +101,6 @@ fn setup_config() -> std::io::Result<()> {
     Ok(())
 }
 
-fn get_config_path() -> PathBuf {
-    let config_path = app_root(AppDataType::UserConfig, &APP_INFO).expect("failed to get config path!");
-    config_path.join(&format!("{}.toml", NAME))
-}
-
 fn write_config(s: &'static str) -> std::io::Result<()> {
     write(get_config_path(), s)
 }
@@ -108,11 +129,6 @@ fn read(path: PathBuf) -> std::io::Result<String> {
     let mut config = String::new();
     f.read_to_string(&mut config)?;
     Ok(config)
-}
-
-fn get_cache_path(s: &'static str) -> PathBuf {
-    let cache_path = app_dir(AppDataType::UserCache, &APP_INFO, "cache").expect("failed to get cache path!");
-    cache_path.join(s)
 }
 
 fn is_cached_data_stale() -> std::io::Result<bool> {
@@ -193,6 +209,4 @@ fn build_emote_map(toml_value: &Value) -> HashMap<String, String> {
     map
 }
 
-// TODO integration tests -- config is put in place, hash of config works, persistent map works,
-// basic happy path
 // TODO refactor

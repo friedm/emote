@@ -640,7 +640,7 @@
     multi = '╚(•⌂•)╝'
   [multi.shrug]
     words = ['shrug']
-    multi = '¯\\_(ツ)_/¯'
+    multi = '¯\_(ツ)_/¯'
   [multi.shy]
     words = ['shy']
     multi = '=^_^='
