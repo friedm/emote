@@ -4,6 +4,8 @@ extern crate clap;
 extern crate time;
 extern crate toml;
 extern crate serde_json;
+extern crate stderrlog;
+#[macro_use] extern crate log;
 
 use std::collections::HashMap;
 use std::env;
@@ -63,28 +65,25 @@ fn main() {
                           // TODO bash completion (gen_completions)
                           .get_matches();
 
-    let debug = cli_matches.is_present("debug");
+    if cli_matches.is_present("debug") {
+        stderrlog::new().module(module_path!())
+                        .verbosity(3)
+                        .init().unwrap();
+    }
+
     let text = cli_matches.value_of("text").unwrap();
 
-    let t1 = precise_time_ns();
+    let t0 = precise_time_ns();
     setup_config().expect("failed to write default config file!");
-    let t2 = precise_time_ns();
+    let t1 = precise_time_ns();
     let emote_map = load_and_cache_emotes().expect("failed to load emote map!");
-    let t3 = precise_time_ns();
+    let t2 = precise_time_ns();
+    info!("setup:  {}us", (t1-t0)/1000);
+    info!("load:   {}us", (t2-t1)/1000);
+    info!("total:  {}us", (t2-t0)/1000);
+
     match emote_map.get(text) {
         Some(emote) => {
-            let t4 = precise_time_ns();
-            if debug {
-                println!("\
-setup:  {}us
-load:   {}us
-lookup: {}us
-total:  {}us",
-                         (t2-t1)/1000,
-                         (t3-t2)/1000,
-                         (t4-t3)/1000,
-                         (t4-t1)/1000);
-            }
             println!("{}", emote);
         }
         None => {
@@ -156,16 +155,16 @@ fn update_config_hash() -> std::io::Result<()> {
 fn load_and_cache_emotes() -> std::io::Result<HashMap<String, String>> {
     let cache_path = get_cache_path("emote.map");
     if !cache_path.is_file() || is_cached_data_stale()? {
-        println!("building emote map"); // TODO use debug flag here
+        info!("building emote map");
         build_and_cache_map()
     } else {
-        println!("loading emote map from disk");
+        info!("loading emote map from disk");
         // read map from disk
         let map = serde_json::from_str(&read_cached_map()?);
         match map {
             Ok(map) => Ok(map),
             Err(_) => {
-                println!("failed to load, building instead");
+                warn!("failed to load, building instead");
                 build_and_cache_map()
             }
         }

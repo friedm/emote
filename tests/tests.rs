@@ -89,14 +89,14 @@ fn loads_cache() {
     let output = Command::new(&path).env("EMOTE_CONFIG_DIR", &config.as_os_str())
                                    .env("EMOTE_CACHE_DIR", &cache.as_os_str())
                                    .arg("shrug")
-                                   .arg("-d").output().unwrap().stdout;
+                                   .arg("-d").output().unwrap().stderr;
     let s = String::from_utf8(output).unwrap();
     assert!(s.contains("building emote map"), s);
     assert!(!s.contains("loading"), s);
     let output = Command::new(&path).env("EMOTE_CONFIG_DIR", &config.as_os_str())
                                    .env("EMOTE_CACHE_DIR", &cache.as_os_str())
                                    .arg("shrug")
-                                   .arg("-d").output().unwrap().stdout;
+                                   .arg("-d").output().unwrap().stderr;
     let s = String::from_utf8(output).unwrap();
     assert!(s.contains("loading emote map"), s);
     assert!(!s.contains("building"), s);
