@@ -25,7 +25,7 @@
     multi = '•͡˘㇁•͡˘'
   [multi.bat]
     words = ['bat']
-    multi = '/|\\ ^._.^ /|\\'
+    multi = '/|\ ^._.^ /|\'
   [multi.bear]
     words = ['bear', 'koala']
     multi = 'ʕ·͡ᴥ·ʔ﻿'
@@ -217,7 +217,7 @@
     multi = '(≧︿≦)'
   [multi.dunnolol]
     words = ['dunno']
-    multi = '¯\\(°_o)/¯'
+    multi = '¯\(°_o)/¯'
   [multi.ebola]
     words = ['ebola']
     multi = 'ᴇʙᴏʟᴀ'
@@ -286,7 +286,7 @@
     multi = 'ᕙ(`▽´)ᕗ'
   [multi.flipped]
     words = ['flipped', 'heavytable']
-    multi = '┬─┬﻿ ︵ /(.□. \\）'
+    multi = '┬─┬﻿ ︵ /(.□. \）'
   [multi.flower]
     words = ['flower', 'flor']
     multi = '(✿◠‿◠)'
@@ -379,7 +379,7 @@
     multi = '(ʘ‿ʘ)╯'
   [multi.highfive]
     words = ['highfive']
-    multi = '._.)/\\(._.'
+    multi = '._.)/\(._.'
   [multi.hitting]
     words = ['hitting']
     multi = '( ｀皿´)｡ﾐ/'
@@ -418,7 +418,7 @@
     multi = '┬┴┬┴┤Ɵ͆ل͜Ɵ͆ ༽ﾉ'
   [multi.kiahh]
     words = ['kiahh']
-    multi = '~\\(≧▽≦)/~'
+    multi = '~\(≧▽≦)/~'
   [multi.kiss]
     words = ['kiss']
     multi = '(づ ￣ ³￣)づ'
@@ -451,7 +451,7 @@
     multi = '( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)'
   [multi.lennyshrug]
     words = ['lennyshrug']
-    multi = '¯\\_( ͡° ͜ʖ ͡°)_/¯'
+    multi = '¯\_( ͡° ͜ʖ ͡°)_/¯'
   [multi.lennysir]
     words = ['lennysir']
     multi = '( ಠ ͜ʖ ರೃ)'
@@ -490,7 +490,7 @@
     multi = '(/¯◡ ‿ ◡)/¯ ~ ┻━┻'
   [multi.meep]
     words = ['meep']
-    multi = '\\(°^°)/'
+    multi = '\(°^°)/'
   [multi.meh]
     words = ['meh']
     multi = 'ಠ_ಠ'
@@ -694,7 +694,7 @@
     multi = '(๑•́ ヮ •̀๑)'
   [multi.surrender]
     words = ['surrender']
-    multi = '\\_(-_-)_/'
+    multi = '\_(-_-)_/'
   [multi.stalker]
     words = ['stalker']
     multi = '┬┴┬┴┤(･_├┬┴┬┴'
@@ -721,7 +721,7 @@
     multi = '୧༼ಠ益ಠ༽︻╦╤─'
   [multi.thanks]
     words = ['thanks', 'thankyou', 'ty']
-    multi = '\\(^-^)/'
+    multi = '\(^-^)/'
   [multi.therefore]
     words = ['therefore', 'so']
     multi = '⸫'
@@ -787,7 +787,7 @@
     multi = '⊙ω⊙'
   [multi.yay]
     words = ['yay']
-    multi = '\\( ﾟヮﾟ)/'
+    multi = '\( ﾟヮﾟ)/'
   [multi.yeah]
     words = ['yeah', 'yes']
     multi = '(•̀ᴗ•́)و ̑̑'
