@@ -7,35 +7,42 @@ use serde_json;
 
 use util::FileUtil;
 
-#[derive(Serialize, Deserialize)]
 pub struct EmoteMap {
-    map: HashMap<String, String>
+    map: HashMap<String, String>,
+    persist_file: FileUtil
 }
 
 impl EmoteMap {
-    pub fn build(toml_string: String) -> EmoteMap {
-        let value = toml_string.parse::<Value>().expect("invalid toml in emote.toml!");
+    pub fn new(path: PathBuf) -> EmoteMap {
         EmoteMap {
-            map: build_emote_map(&value)
+            map: HashMap::new(),
+            persist_file: FileUtil::new(path)
         }
     }
+
+    pub fn build(&mut self, toml_string: String) {
+        let value = toml_string.parse::<Value>().expect("invalid toml in emote.toml!");
+        self.map = build_emote_map(&value)
+    }
     
-    pub fn load(path: PathBuf) -> io::Result<EmoteMap> {
-        let json = FileUtil::new(path).read()?;
-        let map = serde_json::from_str(&json)?;
-        Ok(EmoteMap {
-            map: map
-        })
+    pub fn load(&mut self) -> io::Result<()> {
+        let json = self.persist_file.read()?;
+        self.map = serde_json::from_str(&json)?;
+        Ok(())
     }
 
     pub fn get<'a>(&self, key: &'a str) -> Option<&String> {
         self.map.get(key)
     }
 
-    pub fn persist(&self, path: PathBuf) -> io::Result<()> {
+    pub fn persist(&self) -> io::Result<()> {
         let json = serde_json::to_string(&self.map)?;
-        FileUtil::new(path).write(&json)?;
+        self.persist_file.write(&json)?;
         Ok(())
+    }
+
+    pub fn has_been_persisted(&self) -> bool {
+        self.persist_file.exists()
     }
 }
 

@@ -3,7 +3,6 @@ extern crate blake2;
 extern crate clap;
 extern crate time;
 extern crate toml;
-#[macro_use] extern crate serde_derive;
 extern crate serde_json;
 extern crate stderrlog;
 extern crate regex;
@@ -76,11 +75,14 @@ fn main() {
                         .init().unwrap();
     }
 
-
+    let config = FileUtil::new_hashed(get_config_path(),
+                                      get_cache_path("config.hash"));
     let t0 = precise_time_ns();
-    setup_config().expect("failed to write default config file!");
+    setup_config(&config).expect("failed to write default config file!");
     let t1 = precise_time_ns();
-    let emote_map = load_and_cache_emotes().expect("failed to load emote map!");
+    let mut emote_map = EmoteMap::new(get_cache_path("emote.map"));
+    load_and_cache_emotes(&mut emote_map,
+                          &config).expect("failed to load emote map!");
     let t2 = precise_time_ns();
     info!("setup:  {}us", (t1-t0)/1000);
     info!("load:   {}us", (t2-t1)/1000);
@@ -128,43 +130,35 @@ fn replace_matches_in_text<'a>(s: String, map: &'a EmoteMap) -> String {
     o
 }
 
-fn setup_config() -> std::io::Result<()> {
-    if !get_config_path().is_file() {
-        FileUtil::new(get_config_path()).write(DEFAULT_CONFIG)?;
+fn setup_config(config: &FileUtil) -> std::io::Result<()> {
+    if !config.exists() {
+        config.write(DEFAULT_CONFIG)?;
     }
     Ok(())
 }
 
-fn load_and_cache_emotes() -> std::io::Result<EmoteMap> {
-    let cache_path = get_cache_path("emote.map");
-    if !cache_path.is_file() || FileUtil::new_hashed(get_config_path(),
-                                                     get_cache_path("config.hash")).is_stale()? {
+fn load_and_cache_emotes(emote_map: &mut EmoteMap, config: &FileUtil) -> std::io::Result<()> {
+    if !emote_map.has_been_persisted() || config.is_stale()? {
         info!("building emote map");
-        build_and_cache_map()
+        build_and_cache_map(emote_map, config)
     } else {
         info!("loading emote map from disk");
         // read map from disk
-        let map = EmoteMap::load(get_cache_path("emote.map"));
-        match map {
-            Ok(map) => Ok(map),
+        match emote_map.load() {
+            Ok(_) => Ok(()),
             Err(e) => {
                 warn!("failed to load, building instead: {}", e);
-                build_and_cache_map()
+                build_and_cache_map(emote_map, config)
             }
         }
     }
 }
 
-fn build_and_cache_map() -> std::io::Result<EmoteMap> {
-    // read config
-    let config = FileUtil::new(get_config_path());
-    // serialize and write to disk
-    let map = EmoteMap::build(config.read()?);
-    map.persist(get_cache_path("emote.map"))?;
-    // write cached sha
-    FileUtil::new_hashed(get_config_path(),
-                         get_cache_path("config.hash")).store_hash()?;
-    Ok(map)
+fn build_and_cache_map(emote_map: &mut EmoteMap, config: &FileUtil) -> std::io::Result<()> {
+    emote_map.build(config.read()?);
+    emote_map.persist()?;
+    config.store_hash()?;
+    Ok(())
 }
 
 // TODO refactor

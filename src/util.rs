@@ -57,6 +57,10 @@ impl FileUtil {
         let hash = Blake2b::digest_reader(&mut f)?; 
         Ok(format!("{:x}", hash))
     }
+
+    pub fn exists(&self) -> bool {
+        self.path.is_file()
+    }
 }
 
 fn write<'a>(path: &PathBuf, s: &'a str) -> io::Result<()> {
