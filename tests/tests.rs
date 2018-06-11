@@ -7,7 +7,7 @@ use std::fs::{File};
 use std::path::{PathBuf, Path};
 use std::ffi::OsString;
 use std::io::prelude::*;
-use std::process::Command;
+use std::process::{Command, Stdio};
 
 use tempfile::tempdir;
 
@@ -85,7 +85,6 @@ fn outputs_emoticon() {
 #[test]
 fn loads_cache() {
     let (path, config, cache) = get_paths();
-    assert!(!cache.is_dir());
     let output = Command::new(&path).env("EMOTE_CONFIG_DIR", &config.as_os_str())
                                    .env("EMOTE_CACHE_DIR", &cache.as_os_str())
                                    .arg("shrug")
@@ -100,4 +99,44 @@ fn loads_cache() {
     let s = String::from_utf8(output).unwrap();
     assert!(s.contains("loading emote map"), s);
     assert!(!s.contains("building"), s);
+}
+
+#[test]
+fn reads_stdin() {
+    let (path, config, cache) = get_paths();
+    let p = Command::new(&path).env("EMOTE_CONFIG_DIR", &config.as_os_str())
+                               .env("EMOTE_CACHE_DIR", &cache.as_os_str())
+                               .stdin(Stdio::piped())
+                               .stdout(Stdio::piped())
+                               .spawn().unwrap();
+    { 
+        p.stdin.unwrap().write(b":shrug:").expect("stdin fail");
+    }
+    let mut output = p.stdout.unwrap();
+    let mut s = String::new();
+    output.read_to_string(&mut s).expect("no output");
+    assert_eq!("¯\\_(ツ)_/¯\n", s);
+}
+
+#[test]
+fn reads_stdin_multiline() {
+    let (path, config, cache) = get_paths();
+    let p = Command::new(&path).env("EMOTE_CONFIG_DIR", &config.as_os_str())
+                               .env("EMOTE_CACHE_DIR", &cache.as_os_str())
+                               .stdin(Stdio::piped())
+                               .stdout(Stdio::piped())
+                               .spawn().unwrap();
+    { 
+        p.stdin.unwrap().write(
+"as:shrug:df:snowman: ☃☃☃☃☃☃☃☃
+:butt:asdf:pingpong:
+:hugs:".as_bytes()).expect("stdin fail");
+    }
+    let mut output = p.stdout.unwrap();
+    let mut s = String::new();
+    output.read_to_string(&mut s).expect("no output");
+    assert_eq!(
+"as¯\\_(ツ)_/¯df☃ ☃☃☃☃☃☃☃☃
+(‿|‿)asdf( •_•)O*¯`·.¸.·´¯`°Q(•_• )
+(づ｡◕‿‿◕｡)づ\n", s);
 }

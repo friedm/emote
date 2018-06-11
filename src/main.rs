@@ -5,7 +5,9 @@ extern crate time;
 extern crate toml;
 extern crate serde_json;
 extern crate stderrlog;
+extern crate regex;
 #[macro_use] extern crate log;
+#[macro_use] extern crate lazy_static;
 
 use std::collections::HashMap;
 use std::env;
@@ -19,6 +21,7 @@ use blake2::{Blake2b, Digest};
 use clap::{Arg, App};
 use time::precise_time_ns;
 use toml::Value;
+use regex::Regex;
 
 const NAME: &'static str = env!("CARGO_PKG_NAME");
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
@@ -57,7 +60,6 @@ fn main() {
     let cli_matches = App::new(NAME)
                           .version(VERSION)
                           .arg(Arg::with_name("text")
-                               .required(true)
                                .index(1))
                           .arg(Arg::with_name("debug")
                                .short("d")
@@ -71,7 +73,6 @@ fn main() {
                         .init().unwrap();
     }
 
-    let text = cli_matches.value_of("text").unwrap();
 
     let t0 = precise_time_ns();
     setup_config().expect("failed to write default config file!");
@@ -82,15 +83,46 @@ fn main() {
     info!("load:   {}us", (t2-t1)/1000);
     info!("total:  {}us", (t2-t0)/1000);
 
-    match emote_map.get(text) {
-        Some(emote) => {
-            println!("{}", emote);
+    if cli_matches.is_present("text") {
+        let text = cli_matches.value_of("text").unwrap();
+        match emote_map.get(text) {
+            Some(emote) => {
+                println!("{}", emote);
+            }
+            None => {
+                println!("no match for {}", text);
+                exit(1);
+            }
         }
-        None => {
-            println!("no match for {}", text);
-            exit(1);
+    } else {
+        info!("reading from stdin");
+        let stdin = std::io::stdin();
+        for line in stdin.lock().lines() {
+            println!("{}", replace_matches_in_text(line.unwrap(), &emote_map));
         }
     }
+}
+
+fn replace_matches_in_text<'a>(s: String, map: &'a HashMap<String, String>) -> String {
+    lazy_static! {
+        static ref RE: Regex = Regex::new(r":[a-zA-Z_]+?:").unwrap();
+    }
+    let mut o = String::with_capacity(s.len());
+    let mut last_match = 0usize;
+    for m in RE.find_iter(&s) {
+        let l: usize = m.end()-m.start();
+        o.push_str(&s[last_match..m.start()]);
+        let key = &m.as_str()[1..l-1];
+        let r = map.get(key);
+        if r.is_some() {
+            o.push_str(r.unwrap());
+        } else {
+            o.push_str(m.as_str());
+        }
+        last_match = m.end();
+    }
+    o.push_str(&s[last_match..s.len()]);
+    o
 }
 
 fn setup_config() -> std::io::Result<()> {
@@ -209,3 +241,4 @@ fn build_emote_map(toml_value: &Value) -> HashMap<String, String> {
 }
 
 // TODO refactor
+// TODO emoji support
