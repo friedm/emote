@@ -11,14 +11,11 @@ extern crate regex;
 #[macro_use] extern crate lazy_static;
 
 use std::env;
-use std::fs::File;
-use std::io;
 use std::io::prelude::*;
 use std::path::PathBuf;
 use std::process::exit;
 
 use app_dirs::{AppInfo, app_root, app_dir, AppDataType};
-use blake2::{Blake2b, Digest};
 use clap::{Arg, App};
 use time::precise_time_ns;
 use regex::Regex;
@@ -27,6 +24,7 @@ mod emote_map;
 mod util;
 
 use emote_map::EmoteMap;
+use util::FileUtil;
 
 const NAME: &'static str = env!("CARGO_PKG_NAME");
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
@@ -132,58 +130,15 @@ fn replace_matches_in_text<'a>(s: String, map: &'a EmoteMap) -> String {
 
 fn setup_config() -> std::io::Result<()> {
     if !get_config_path().is_file() {
-        write_config(DEFAULT_CONFIG)?;
+        FileUtil::new(get_config_path()).write(DEFAULT_CONFIG)?;
     }
     Ok(())
-}
-
-fn write_config(s: &'static str) -> std::io::Result<()> {
-    write(get_config_path(), s)
-}
-
-fn write<'a>(path: PathBuf, s: &'a str) -> std::io::Result<()> { // TODO clean up
-    let mut f = File::create(path)?;
-    f.write_all(s.as_bytes())?;
-    f.sync_all()?;
-    Ok(())
-}
-
-fn read(path: PathBuf) -> io::Result<String> {
-    let mut f = File::open(path)?;
-    let mut config = String::new();
-    f.read_to_string(&mut config)?;
-    Ok(config)
-}
-
-fn read_config() -> std::io::Result<String> {
-    read(get_config_path())
-}
-
-fn is_cached_data_stale() -> std::io::Result<bool> {
-    let hash_file = get_cache_path("config.hash");
-    if !hash_file.is_file() {
-        return Ok(true);
-    }
-    let mut f = File::open(hash_file)?;
-    let mut cached_hash = String::new();
-    f.read_to_string(&mut cached_hash)?;
-    
-    let mut f = File::open(get_config_path())?;
-    let hash = Blake2b::digest_reader(&mut f)?; 
-    let hash = format!("{:x}", hash);
-    Ok(hash != cached_hash)
-}
-
-fn update_config_hash() -> std::io::Result<()> {
-    let mut f = File::open(get_config_path())?;
-    let hash = Blake2b::digest_reader(&mut f)?;
-    let hash = format!("{:x}", hash);
-    write(get_cache_path("config.hash"), &hash)
 }
 
 fn load_and_cache_emotes() -> std::io::Result<EmoteMap> {
     let cache_path = get_cache_path("emote.map");
-    if !cache_path.is_file() || is_cached_data_stale()? {
+    if !cache_path.is_file() || FileUtil::new_hashed(get_config_path(),
+                                                     get_cache_path("config.hash")).is_stale()? {
         info!("building emote map");
         build_and_cache_map()
     } else {
@@ -202,12 +157,13 @@ fn load_and_cache_emotes() -> std::io::Result<EmoteMap> {
 
 fn build_and_cache_map() -> std::io::Result<EmoteMap> {
     // read config
-    let config = read_config()?;
+    let config = FileUtil::new(get_config_path());
     // serialize and write to disk
-    let map = EmoteMap::build(config);
+    let map = EmoteMap::build(config.read()?);
     map.persist(get_cache_path("emote.map"))?;
     // write cached sha
-    update_config_hash()?;
+    FileUtil::new_hashed(get_config_path(),
+                         get_cache_path("config.hash")).store_hash()?;
     Ok(map)
 }
 
