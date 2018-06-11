@@ -2,6 +2,14 @@
 name = "emote"
 version = "0.1.0"
 authors = ["Matt Friedman <matt@friedm.com>"]
+description = "Display emoticons."
+documentation = "https://github.com/friedm/emote"
+homepage = "https://github.com/friedm/emote"
+repository = "https://github.com/friedm/emote"
+readme = "README.md"
+keywords = ["emoticon", "emote"]
+categories = ["command-line-utilities"]
+license = "MIT"
 
 [dependencies]
 toml = "0.4"
