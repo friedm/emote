@@ -3,13 +3,13 @@ extern crate blake2;
 extern crate clap;
 extern crate time;
 extern crate toml;
+#[macro_use] extern crate serde_derive;
 extern crate serde_json;
 extern crate stderrlog;
 extern crate regex;
 #[macro_use] extern crate log;
 #[macro_use] extern crate lazy_static;
 
-use std::collections::HashMap;
 use std::env;
 use std::fs::File;
 use std::io::prelude::*;
@@ -20,8 +20,11 @@ use app_dirs::{AppInfo, app_root, app_dir, AppDataType};
 use blake2::{Blake2b, Digest};
 use clap::{Arg, App};
 use time::precise_time_ns;
-use toml::Value;
 use regex::Regex;
+
+mod emote_map;
+
+use emote_map::EmoteMap;
 
 const NAME: &'static str = env!("CARGO_PKG_NAME");
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
@@ -103,7 +106,7 @@ fn main() {
     }
 }
 
-fn replace_matches_in_text<'a>(s: String, map: &'a HashMap<String, String>) -> String {
+fn replace_matches_in_text<'a>(s: String, map: &'a EmoteMap) -> String {
     lazy_static! {
         static ref RE: Regex = Regex::new(r":[a-zA-Z_]+?:").unwrap();
     }
@@ -184,7 +187,7 @@ fn update_config_hash() -> std::io::Result<()> {
     write(get_cache_path("config.hash"), &hash)
 }
 
-fn load_and_cache_emotes() -> std::io::Result<HashMap<String, String>> {
+fn load_and_cache_emotes() -> std::io::Result<EmoteMap> {
     let cache_path = get_cache_path("emote.map");
     if !cache_path.is_file() || is_cached_data_stale()? {
         info!("building emote map");
@@ -203,13 +206,11 @@ fn load_and_cache_emotes() -> std::io::Result<HashMap<String, String>> {
     }
 }
 
-fn build_and_cache_map() -> std::io::Result<HashMap<String, String>> {
+fn build_and_cache_map() -> std::io::Result<EmoteMap> {
     // read config
     let config = read_config()?;
-    // build_emote_map
-    let value = config.parse::<Value>().expect("invalid toml in emote.toml!");
     // serialize and write to disk
-    let map = build_emote_map(&value);
+    let map = EmoteMap::build(config);
     let json = serde_json::to_string(&map).expect("error serializing emote map!");
     write_cached_map(&json)?;
     // write cached sha
@@ -217,28 +218,7 @@ fn build_and_cache_map() -> std::io::Result<HashMap<String, String>> {
     Ok(map)
 }
 
-fn build_emote_map(toml_value: &Value) -> HashMap<String, String> {
-    let mut map = HashMap::new();
 
-    for (_, item) in toml_value["multi"].as_table()
-                                        .expect("unexpected multi toml!")
-                                        .into_iter() {
-        let item = item.as_table()
-                       .expect(&format!("unexpected multi toml: {:?}", item));
-        let multi = item["multi"].as_str()
-                                 .expect(&format!("missing multi in toml: {:?}", item))
-                                 .clone();
-        let words = item["words"].as_array()
-                                 .expect(&format!("missing words in toml: {:?}", item));
-        for word in words {
-            let word = word.as_str()
-                           .expect(&format!("missing word in toml: {:?}", item));
-            map.insert(word.to_string(), multi.to_string());
-        }
-    }
-
-    map
-}
 
 // TODO refactor
 // TODO emoji support
