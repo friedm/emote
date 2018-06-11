@@ -1,6 +1,11 @@
 use std::collections::HashMap;
+use std::io;
+use std::path::PathBuf;
 
 use toml::Value;
+use serde_json;
+
+use util::FileUtil;
 
 #[derive(Serialize, Deserialize)]
 pub struct EmoteMap {
@@ -14,9 +19,23 @@ impl EmoteMap {
             map: build_emote_map(&value)
         }
     }
+    
+    pub fn load(path: PathBuf) -> io::Result<EmoteMap> {
+        let json = FileUtil::new(path).read()?;
+        let map = serde_json::from_str(&json)?;
+        Ok(EmoteMap {
+            map: map
+        })
+    }
 
     pub fn get<'a>(&self, key: &'a str) -> Option<&String> {
         self.map.get(key)
+    }
+
+    pub fn persist(&self, path: PathBuf) -> io::Result<()> {
+        let json = serde_json::to_string(&self.map)?;
+        FileUtil::new(path).write(&json)?;
+        Ok(())
     }
 }
 

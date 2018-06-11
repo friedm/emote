@@ -12,6 +12,7 @@ extern crate regex;
 
 use std::env;
 use std::fs::File;
+use std::io;
 use std::io::prelude::*;
 use std::path::PathBuf;
 use std::process::exit;
@@ -23,6 +24,7 @@ use time::precise_time_ns;
 use regex::Regex;
 
 mod emote_map;
+mod util;
 
 use emote_map::EmoteMap;
 
@@ -139,10 +141,6 @@ fn write_config(s: &'static str) -> std::io::Result<()> {
     write(get_config_path(), s)
 }
 
-fn write_cached_map<'a>(s: &'a str) -> std::io::Result<()> {
-    write(get_cache_path("emote.map"), s)
-}
-
 fn write<'a>(path: PathBuf, s: &'a str) -> std::io::Result<()> { // TODO clean up
     let mut f = File::create(path)?;
     f.write_all(s.as_bytes())?;
@@ -150,19 +148,15 @@ fn write<'a>(path: PathBuf, s: &'a str) -> std::io::Result<()> { // TODO clean u
     Ok(())
 }
 
-fn read_config() -> std::io::Result<String> {
-    read(get_config_path())
-}
-
-fn read_cached_map() -> std::io::Result<String> {
-    read(get_cache_path("emote.map"))
-}
-
-fn read(path: PathBuf) -> std::io::Result<String> {
+fn read(path: PathBuf) -> io::Result<String> {
     let mut f = File::open(path)?;
     let mut config = String::new();
     f.read_to_string(&mut config)?;
     Ok(config)
+}
+
+fn read_config() -> std::io::Result<String> {
+    read(get_config_path())
 }
 
 fn is_cached_data_stale() -> std::io::Result<bool> {
@@ -195,11 +189,11 @@ fn load_and_cache_emotes() -> std::io::Result<EmoteMap> {
     } else {
         info!("loading emote map from disk");
         // read map from disk
-        let map = serde_json::from_str(&read_cached_map()?);
+        let map = EmoteMap::load(get_cache_path("emote.map"));
         match map {
             Ok(map) => Ok(map),
-            Err(_) => {
-                warn!("failed to load, building instead");
+            Err(e) => {
+                warn!("failed to load, building instead: {}", e);
                 build_and_cache_map()
             }
         }
@@ -211,14 +205,11 @@ fn build_and_cache_map() -> std::io::Result<EmoteMap> {
     let config = read_config()?;
     // serialize and write to disk
     let map = EmoteMap::build(config);
-    let json = serde_json::to_string(&map).expect("error serializing emote map!");
-    write_cached_map(&json)?;
+    map.persist(get_cache_path("emote.map"))?;
     // write cached sha
     update_config_hash()?;
     Ok(map)
 }
-
-
 
 // TODO refactor
 // TODO emoji support
